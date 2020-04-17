@@ -1,0 +1,96 @@
+header {
+  background-color: #579C87;
+  height: 80px;
+}
+
+h1 {
+  color: #FDCB46;
+  text-align: center;
+  padding-top: 2%;
+}
+
+footer {
+  background-color: #579C87;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 80px;
+}
+
+aside {
+  background-color: #579C87;
+  color: #FDCB46;
+  text-align: Center;
+  height: 30px;
+  width: 25%;
+  margin: auto;
+  border-radius: 10px;
+  padding-top: 1%;
+  text-transform: uppercase;
+}
+aside:hover .pts-animation {
+  display: inline-block;
+  transform: translateY(200%);
+  transition: transform 400ms;
+}
+
+article {
+  display: flex;
+  padding-left: 15%;
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 50px #F1F1F1;
+  height: 400px;
+  width: 300px;
+  margin-left: 100px;
+  transform: scale(1);
+  transition: transform 400ms;
+}
+section:hover {
+  transform: scale(1.15);
+}
+section h3 {
+  padding-top: 50%;
+  text-align: center;
+  box-shadow: #FDCB46;
+}
+section h2 {
+  text-align: center;
+}
+
+.bloc1 {
+  background-color: #FCDFDB;
+}
+.bloc1:hover {
+  background-color: #facac3;
+}
+
+.bloc2 {
+  background-color: #FFF5FE;
+  color: #D8712E;
+}
+.bloc2:hover {
+  background-color: #ffdcfb;
+}
+
+.bloc3 {
+  background-color: #F9F9F9;
+  color: #2140DF;
+}
+.bloc3:hover {
+  background-color: #ececec;
+}
+
+.bloc4 {
+  background-color: #FDFFFD;
+  color: #42973C;
+}
+.bloc4:hover {
+  background-color: #e4ffe4;
+}
+
+/*# sourceMappingURL=style.css.map */

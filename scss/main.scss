@@ -1,0 +1,92 @@
+header{
+    background-color: #579C87;
+    height: 80px;
+}
+h1{
+    color: #FDCB46;
+    text-align: center;
+    padding-top: 2%;
+}
+footer
+{
+  background-color: #579C87;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 80px;
+
+}
+aside{
+    background-color: #579C87;
+    color: #FDCB46;
+    text-align: Center;
+    height: 30px;
+    width: 25%;
+    margin: auto;
+    border-radius: 10px;;
+    padding-top: 1%;
+    text-transform: uppercase;
+    &:hover{
+       .pts-animation{
+        display: inline-block;
+        transform: translateY(200%);
+        transition: transform 400ms;
+       
+        }
+    }
+}
+article{
+    display: flex;    
+    padding-left: 15%;
+}
+
+section
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 50px #F1F1F1;;
+    height: 400px;
+    width: 300px;
+    margin-left: 100px;
+    transform: scale(1);
+    transition: transform 400ms;
+    &:hover {
+        transform: scale(1.15);
+    }
+    h3{
+        padding-top: 50%;
+        text-align: center;
+        box-shadow: #FDCB46;
+    }
+    h2{
+        text-align: center;
+    }
+}
+.bloc1{
+    background-color: #FCDFDB;
+    &:hover{
+    background-color: darken(#FCDFDB, 5);
+    }
+}
+.bloc2{
+    background-color: #FFF5FE;
+    color: #D8712E;
+    &:hover{
+        background-color: darken(#FFF5FE, 5);
+        }
+}
+.bloc3{
+    background-color: #F9F9F9;
+    color: #2140DF;
+    &:hover{
+        background-color: darken(#F9F9F9, 5);
+        }
+}
+.bloc4{
+    background-color: #FDFFFD;
+    color: #42973C;
+    &:hover{
+        background-color: darken(#FDFFFD, 5);
+        }
+}
