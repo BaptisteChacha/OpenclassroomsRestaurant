@@ -15,7 +15,10 @@ footer
   padding-left: 20px;
   padding-right: 20px;
   height: 80px;
-
+  width: auto;
+  color: #FDCB46 ;
+  font-size: 30px;
+  
 }
 aside{
     background-color: #579C87;
@@ -25,14 +28,18 @@ aside{
     width: 25%;
     margin: auto;
     border-radius: 10px;;
-    padding-top: 1%;
+
+    padding-bottom: 15px;
     text-transform: uppercase;
+    .pts-animation{
+        font-size: 30px;
+        padding-bottom: 10%;
+    }
     &:hover{
        .pts-animation{
         display: inline-block;
-        transform: translateY(200%);
-        transition: transform 400ms;
-       
+        transform: translateY(-30%);
+        transition: transform 400ms ease-in-out;
         }
     }
 }
@@ -68,25 +75,32 @@ section
     &:hover{
     background-color: darken(#FCDFDB, 5);
     }
+   
 }
 .bloc2{
     background-color: #FFF5FE;
-    color: #D8712E;
+    color: lighten(#D8712E, 5%);
     &:hover{
         background-color: darken(#FFF5FE, 5);
         }
 }
 .bloc3{
     background-color: #F9F9F9;
-    color: #2140DF;
+    color: lighten(#2140DF, 5%);
     &:hover{
         background-color: darken(#F9F9F9, 5);
         }
 }
 .bloc4{
     background-color: #FDFFFD;
-    color: #42973C;
+    color: lighten(#42973C, 5%);
     &:hover{
         background-color: darken(#FDFFFD, 5);
         }
+}
+.contact{
+    a{
+        color: #FDCB46;
+        text-decoration: none;
+    }
 }
