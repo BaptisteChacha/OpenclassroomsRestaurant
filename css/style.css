@@ -20,6 +20,28 @@ footer {
   color: #FDCB46;
   font-size: 30px;
 }
+footer .mentions:hover {
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+@keyframes headshake {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(-2%);
+  }
+}
+footer .mentions .contact:hover {
+  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+}
+@keyframes headshake {
+  25% {
+    transform: translateX(2%);
+  }
+  75% {
+    transform: translateX(-2%);
+  }
+}
 
 aside {
   background-color: #579C87;
@@ -71,6 +93,10 @@ section h2 {
 
 .bloc1 {
   background-color: #FCDFDB;
+}
+.bloc1 a {
+  text-decoration: none;
+  color: black;
 }
 .bloc1:hover {
   background-color: #facac3;
