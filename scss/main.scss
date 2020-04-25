@@ -1,4 +1,4 @@
-$shake-intensity:2%;
+$shake-intensity:5%;
 header{
     background-color: #579C87;
     height: 80px;
@@ -21,7 +21,7 @@ footer
   font-size: 30px;
   .mentions{
       &:hover{
-        animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+        animation: headshake 500ms infinite;
         @keyframes headshake {
             25% {
                 // entièrement à droite
@@ -35,7 +35,7 @@ footer
       }
       .contact{
         &:hover{
-            animation: headshake 100ms cubic-bezier(.4,.1,.6,.9) 2;
+            animation: headshake 1000ms cubic-bezier(.4,.1,.6,.9) infinite;
             @keyframes headshake {
                 25% {
                     // entièrement à droite
@@ -48,6 +48,10 @@ footer
             }
           }
       }
+  }
+  a{
+      text-decoration: none;
+      color: #FDCB46;
   }
   
 }
@@ -68,15 +72,18 @@ aside{
     }
     &:hover{
        .pts-animation{
-        display: inline-block;
-        transform: translateY(-30%);
-        transition: transform 400ms ease-in-out;
+        animation: pts 2000ms backwards infinite ;
+      
         }
     }
 }
 article{
     display: flex;    
     padding-left: 15%;
+    a{
+        text-decoration: none;
+        
+    }
 }
 
 section
@@ -118,12 +125,18 @@ section
     &:hover{
         background-color: darken(#FFF5FE, 5);
         }
+        a{
+            color: #D8712E;
+        }
 }
 .bloc3{
     background-color: #F9F9F9;
     color: lighten(#2140DF, 5%);
     &:hover{
         background-color: darken(#F9F9F9, 5);
+        }
+        a{
+           color:#2140DF
         }
 }
 .bloc4{
@@ -132,10 +145,22 @@ section
     &:hover{
         background-color: darken(#FDFFFD, 5);
         }
+        a{
+            color: #42973C;
+        }
 }
 .contact{
     a{
         color: #FDCB46;
         text-decoration: none;
+    }
+}
+
+@keyframes pts {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

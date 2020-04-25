@@ -21,26 +21,30 @@ footer {
   font-size: 30px;
 }
 footer .mentions:hover {
-  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+  animation: headshake 500ms infinite;
 }
 @keyframes headshake {
   25% {
-    transform: translateX(2%);
+    transform: translateX(5%);
   }
   75% {
-    transform: translateX(-2%);
+    transform: translateX(-5%);
   }
 }
 footer .mentions .contact:hover {
-  animation: headshake 100ms cubic-bezier(0.4, 0.1, 0.6, 0.9) 2;
+  animation: headshake 1000ms cubic-bezier(0.4, 0.1, 0.6, 0.9) infinite;
 }
 @keyframes headshake {
   25% {
-    transform: translateX(2%);
+    transform: translateX(5%);
   }
   75% {
-    transform: translateX(-2%);
+    transform: translateX(-5%);
   }
+}
+footer a {
+  text-decoration: none;
+  color: #FDCB46;
 }
 
 aside {
@@ -59,14 +63,15 @@ aside .pts-animation {
   padding-bottom: 10%;
 }
 aside:hover .pts-animation {
-  display: inline-block;
-  transform: translateY(-30%);
-  transition: transform 400ms ease-in-out;
+  animation: pts 2000ms backwards infinite;
 }
 
 article {
   display: flex;
   padding-left: 15%;
+}
+article a {
+  text-decoration: none;
 }
 
 section {
@@ -109,6 +114,9 @@ section h2 {
 .bloc2:hover {
   background-color: #ffdcfb;
 }
+.bloc2 a {
+  color: #D8712E;
+}
 
 .bloc3 {
   background-color: #F9F9F9;
@@ -116,6 +124,9 @@ section h2 {
 }
 .bloc3:hover {
   background-color: #ececec;
+}
+.bloc3 a {
+  color: #2140DF;
 }
 
 .bloc4 {
@@ -125,10 +136,22 @@ section h2 {
 .bloc4:hover {
   background-color: #e4ffe4;
 }
+.bloc4 a {
+  color: #42973C;
+}
 
 .contact a {
   color: #FDCB46;
   text-decoration: none;
+}
+
+@keyframes pts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
