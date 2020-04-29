@@ -117,16 +117,20 @@ section h2 {
 
 .bloc2 {
   background-color: #fff5fe;
-  color: #dc8043;
 }
 .bloc2:hover {
   background-color: #ffdcfb;
 }
 .bloc2 a {
-  color: #d8712e;
+  background: -webkit-linear-gradient(45deg, #d8712e, #905BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc2 h3 {
   padding-top: 50%;
+  background: -webkit-linear-gradient(45deg, #d8712e, #905BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bloc3 {
@@ -137,10 +141,15 @@ section h2 {
   background-color: #ececec;
 }
 .bloc3 a {
-  color: #2140df;
+  background: -webkit-linear-gradient(45deg, #2140df, #2B91F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc3 h3 {
   padding-top: 50%;
+  background: -webkit-linear-gradient(45deg, #2140df, #2B91F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .bloc4 {
@@ -151,10 +160,15 @@ section h2 {
   background-color: #e4ffe4;
 }
 .bloc4 a {
-  color: #42973c;
+  background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .bloc4 h3 {
   padding-top: 50%;
+  background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .contact a {

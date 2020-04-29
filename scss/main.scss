@@ -124,17 +124,22 @@ section {
 }
 .bloc2 {
   background-color: #fff5fe;
-  color: lighten(#d8712e, 5%);
   &:hover {
     background-color: darken(#fff5fe, 5);
   }
   a {
-    color: #d8712e;
+    background: -webkit-linear-gradient(45deg, #d8712e,#905BFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   h3 {
     padding-top: 50%;
+    background: -webkit-linear-gradient(45deg, #d8712e,#905BFD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-}
+  }
+
 .bloc3 {
   background-color: #f9f9f9;
   color: lighten(#2140df, 5%);
@@ -142,12 +147,17 @@ section {
     background-color: darken(#f9f9f9, 5);
   }
   a {
-    color: #2140df;
+    background: -webkit-linear-gradient(45deg, #2140df, #2B91F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   h3 {
     padding-top: 50%;
+    background: -webkit-linear-gradient(45deg, #2140df, #2B91F8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
-}
+  }
 .bloc4 {
   background-color: #fdfffd;
   color: lighten(#42973c, 5%);
@@ -155,10 +165,15 @@ section {
     background-color: darken(#fdfffd, 5);
   }
   a {
-    color: #42973c;
+    background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   h3 {
     padding-top: 50%;
+    background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
 .contact {
