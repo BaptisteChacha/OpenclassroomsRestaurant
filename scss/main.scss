@@ -147,7 +147,7 @@ section {
     background-color: darken(#f9f9f9, 5);
   }
   a {
-    background: -webkit-linear-gradient(45deg, #2140df, #2B91F8);
+    background: -webkit-linear-gradient(180deg, #2140df, #2B91F8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -206,4 +206,17 @@ section {
 }
 body{
     padding-bottom: 100px;
+}
+.fas{
+    background: -webkit-linear-gradient(30deg, #F05561, #F6916A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width:426px){
+  article{
+    padding-left: 0%;
+  }
+  section{
+    padding-left: 35%;
+  }
 }
