@@ -1,166 +1,194 @@
-$shake-intensity:5%;
-header{
-    background-color: #579C87;
-    height: 80px;
+$shake-intensity: 5%;
+header {
+  background-color: #579c87;
+  height: 80px;
 }
-h1{
-    color: #FDCB46;
-    text-align: center;
-    padding-top: 2%;
+h1 {
+  color: #fdcb46;
+  text-align: center;
+  padding-top: 2%;
 }
-footer
-{
-  background-color: #579C87;
+footer {
+  background-color: #579c87;
   display: flex;
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
   height: 80px;
-  width: auto;
-  color: #FDCB46 ;
+  color: #fdcb46;
   font-size: 30px;
-  .mentions{
-      &:hover{
-        animation: headshake 500ms infinite;
-        @keyframes headshake {
-            25% {
-                // entièrement à droite
-                transform: translateX($shake-intensity);
-            }
-            75% {
-                // entièrement à gauche
-                transform: translateX($shake-intensity * -1);
-            }
-        }
-      }
-      .contact{
-        &:hover{
-            animation: headshake 1000ms cubic-bezier(.4,.1,.6,.9) infinite;
-            @keyframes headshake {
-                25% {
-                    // entièrement à droite
-                    transform: translateX($shake-intensity);
-                }
-                75% {
-                    // entièrement à gauche
-                    transform: translateX($shake-intensity * -1);
-                }
-            }
-          }
-      }
-  }
-  a{
-      text-decoration: none;
-      color: #FDCB46;
-  }
-  
-}
-aside{
-    background-color: #579C87;
-    color: #FDCB46;
-    text-align: Center;
-    height: 30px;
-    width: 25%;
-    margin: auto;
-    border-radius: 10px;;
-
-    padding-bottom: 15px;
-    text-transform: uppercase;
-    .pts-animation{
-        font-size: 30px;
-        padding-bottom: 10%;
-    }
-    &:hover{
-       .pts-animation{
-        animation: pts 2000ms backwards infinite ;
-      
-        }
-    }
-}
-article{
-    display: flex;    
-    padding-left: 15%;
-    a{
-        text-decoration: none;
-        
-    }
-}
-
-section
-{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    box-shadow: 3px 3px 50px #F1F1F1;;
-    height: 400px;
-    width: 300px;
-    margin-left: 100px;
-    transform: scale(1);
-    transition: transform 400ms;
+  position: fixed;
+  width: 97%;
+  bottom: 0;
+ 
+  .mentions {
     &:hover {
-        transform: scale(1.15);
+      animation: headshake 500ms infinite;
+      @keyframes headshake {
+        25% {
+          // entièrement à droite
+          transform: translateX($shake-intensity);
+        }
+        75% {
+          // entièrement à gauche
+          transform: translateX($shake-intensity * -1);
+        }
+      }
     }
-    h3{
-        padding-top: 50%;
-        text-align: center;
-        box-shadow: #FDCB46;
+  }
+  .contact {
+    &:hover {
+      animation: headshake 500ms infinite;
+      @keyframes headshake {
+        25% {
+          // entièrement à droite
+          transform: translateX($shake-intensity);
+        }
+        75% {
+          // entièrement à gauche
+          transform: translateX($shake-intensity * -1);
+        }
+      }
     }
-    h2{
-        text-align: center;
-    }
+  }
+  a {
+    text-decoration: none;
+    color: #fdcb46;
+  }
 }
-.bloc1{
-    background-color: #FCDFDB;
-    a{
+aside {
+  background-color: #579c87;
+  color: #fdcb46;
+  text-align: Center;
+  height: 30px;
+  width: 25%;
+  margin: auto;
+  border-radius: 10px;
+
+  padding-bottom: 15px;
+  text-transform: uppercase;
+  .pts-animation {
+    font-size: 30px;
+    padding-bottom: 10%;
+  }
+  &:hover {
+    .pts-animation {
+      animation: pts 2000ms backwards infinite;
+    }
+  }
+}
+article {
+  display: flex;
+  padding-left: 15%;
+  a {
+    text-decoration: none;
+  }
+}
+
+section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: 3px 3px 50px #f1f1f1;
+  height: 400px;
+  width: 300px;
+  margin-left: 100px;
+  transform: scale(1);
+  transition: transform 400ms;
+  &:hover {
+    transform: scale(1.15);
+  }
+  h3 {
+    text-align: center;
+    box-shadow: #fdcb46;
+  }
+  h2 {
+    text-align: center;
+  }
+}
+.bloc1 {
+  background-color: #fcdfdb;
+  .fas {
+    padding-top: 30%;
+    font-size: 40px;
+    margin-top: 50px;
+    padding-left: 42%;
+    color: #8d6464;
+  }
+  a {
     text-decoration: none;
     color: black;
-    }
-    &:hover{
-    background-color: darken(#FCDFDB, 5);
-    }
-   
+  }
+  &:hover {
+    background-color: darken(#fcdfdb, 5);
+  }
 }
-.bloc2{
-    background-color: #FFF5FE;
-    color: lighten(#D8712E, 5%);
-    &:hover{
-        background-color: darken(#FFF5FE, 5);
-        }
-        a{
-            color: #D8712E;
-        }
+.bloc2 {
+  background-color: #fff5fe;
+  color: lighten(#d8712e, 5%);
+  &:hover {
+    background-color: darken(#fff5fe, 5);
+  }
+  a {
+    color: #d8712e;
+  }
+  h3 {
+    padding-top: 50%;
+  }
 }
-.bloc3{
-    background-color: #F9F9F9;
-    color: lighten(#2140DF, 5%);
-    &:hover{
-        background-color: darken(#F9F9F9, 5);
-        }
-        a{
-           color:#2140DF
-        }
+.bloc3 {
+  background-color: #f9f9f9;
+  color: lighten(#2140df, 5%);
+  &:hover {
+    background-color: darken(#f9f9f9, 5);
+  }
+  a {
+    color: #2140df;
+  }
+  h3 {
+    padding-top: 50%;
+  }
 }
-.bloc4{
-    background-color: #FDFFFD;
-    color: lighten(#42973C, 5%);
-    &:hover{
-        background-color: darken(#FDFFFD, 5);
-        }
-        a{
-            color: #42973C;
-        }
+.bloc4 {
+  background-color: #fdfffd;
+  color: lighten(#42973c, 5%);
+  &:hover {
+    background-color: darken(#fdfffd, 5);
+  }
+  a {
+    color: #42973c;
+  }
+  h3 {
+    padding-top: 50%;
+  }
 }
-.contact{
-    a{
-        color: #FDCB46;
-        text-decoration: none;
-    }
+.contact {
+  a {
+    color: #fdcb46;
+    text-decoration: none;
+  }
 }
 
 @keyframes pts {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.carte_note_enchantee {
+  background-color: #fcdfdb;
+  margin-left: 40%;
+  .fas {
+    padding-top: 10%;
+    font-size: 40px;
+    padding-left: 42%;
+    color: #8d6464;
+  }
+  h4 {
+    text-align: center;
+  }
+}
+body{
+    padding-bottom: 100px;
 }
