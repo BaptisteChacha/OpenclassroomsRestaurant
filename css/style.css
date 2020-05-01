@@ -68,11 +68,11 @@ aside:hover .pts-animation {
   animation: pts 2000ms backwards infinite;
 }
 
-article {
+.flexbox {
+  padding-left: 20%;
   display: flex;
-  padding-left: 15%;
 }
-article a {
+.flexbox a {
   text-decoration: none;
 }
 
@@ -135,26 +135,24 @@ section h2 {
 
 .bloc3 {
   background-color: #f9f9f9;
-  color: #3753e2;
 }
 .bloc3:hover {
   background-color: #ececec;
 }
 .bloc3 a {
-  background: -webkit-linear-gradient(180deg, #2140df, #2B91F8);
+  background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .bloc3 h3 {
   padding-top: 50%;
-  background: -webkit-linear-gradient(45deg, #2140df, #2B91F8);
+  background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .bloc4 {
   background-color: #fdfffd;
-  color: #4aa943;
 }
 .bloc4:hover {
   background-color: #e4ffe4;
@@ -186,16 +184,26 @@ section h2 {
 }
 .carte_note_enchantee {
   background-color: #fcdfdb;
-  margin-left: 40%;
+  margin-left: 30%;
+  width: 550px;
+  height: 900px;
+}
+.carte_note_enchantee:hover {
+  transform: scale(1);
 }
 .carte_note_enchantee .fas {
-  padding-top: 10%;
+  padding-top: 5%;
   font-size: 40px;
-  padding-left: 42%;
+  padding-left: 45%;
   color: #8d6464;
 }
 .carte_note_enchantee h4 {
   text-align: center;
+  padding-top: 10px;
+}
+.carte_note_enchantee h4::before {
+  content: "";
+  text-decoration: line-through;
 }
 
 body {
@@ -216,6 +224,23 @@ body {
   section {
     padding-left: 35%;
   }
+}
+.entree {
+  padding-left: 20px;
+}
+
+.prix {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+}
+
+.plat {
+  padding-left: 20px;
+}
+
+.dessert {
+  padding-left: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

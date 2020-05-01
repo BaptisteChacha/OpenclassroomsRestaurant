@@ -77,9 +77,9 @@ aside {
     }
   }
 }
-article {
+.flexbox {
+  padding-left: 20%;
   display: flex;
-  padding-left: 15%;
   a {
     text-decoration: none;
   }
@@ -142,25 +142,23 @@ section {
 
 .bloc3 {
   background-color: #f9f9f9;
-  color: lighten(#2140df, 5%);
   &:hover {
     background-color: darken(#f9f9f9, 5);
   }
   a {
-    background: -webkit-linear-gradient(180deg, #2140df, #2B91F8);
+    background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   h3 {
     padding-top: 50%;
-    background: -webkit-linear-gradient(45deg, #2140df, #2B91F8);
+    background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   }
 .bloc4 {
   background-color: #fdfffd;
-  color: lighten(#42973c, 5%);
   &:hover {
     background-color: darken(#fdfffd, 5);
   }
@@ -193,15 +191,25 @@ section {
 }
 .carte_note_enchantee {
   background-color: #fcdfdb;
-  margin-left: 40%;
+  margin-left: 30%;
+  width: 550px;
+  height: 900px;
+  &:hover {
+    transform: scale(1);
+  }
   .fas {
-    padding-top: 10%;
+    padding-top: 5%;
     font-size: 40px;
-    padding-left: 42%;
+    padding-left: 45%;
     color: #8d6464;
   }
   h4 {
-    text-align: center;
+  text-align: center;
+  padding-top: 10px;
+    &::before{
+      content: "";
+      text-decoration: line-through;
+    }
   }
 }
 body{
@@ -219,4 +227,19 @@ body{
   section{
     padding-left: 35%;
   }
+}
+.entree{
+  padding-left: 20px;
+}
+.prix{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 10px;
+  
+}
+.plat{
+  padding-left: 20px;
+}
+.dessert{
+  padding-left: 20px;
 }
