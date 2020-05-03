@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   background-color: #579c87;
   height: 80px;
@@ -206,6 +207,24 @@ section h2 {
   text-decoration: line-through;
 }
 
+.carte_chic_a_la_francaise {
+  background-color: white;
+  margin-left: 30%;
+  width: 550px;
+  height: 700px;
+}
+.carte_chic_a_la_francaise:hover {
+  transform: scale(1);
+}
+.carte_chic_a_la_francaise h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.carte_chic_a_la_francaise h4::before {
+  content: "";
+  text-decoration: line-through;
+}
+
 body {
   padding-bottom: 100px;
 }
@@ -229,6 +248,15 @@ body {
   padding-left: 20px;
 }
 
+.titre_entrée {
+  color: #C67412;
+}
+
+.entree2 {
+  padding-left: 20px;
+  color: #C67412;
+}
+
 .prix {
   display: flex;
   justify-content: flex-end;
@@ -239,7 +267,128 @@ body {
   padding-left: 20px;
 }
 
+.titre_plat {
+  color: #A56799;
+}
+
+.plat2 {
+  padding-left: 20px;
+  color: #A56799;
+}
+
+.titre_dessert {
+  color: #6E4CCC;
+}
+
+.dessert2 {
+  padding-left: 20px;
+  color: #6E4CCC;
+}
+
 .dessert {
+  padding-left: 20px;
+}
+
+.fin_de_carte {
+  text-align: left;
+}
+
+.titre_carte {
+  background: -webkit-linear-gradient(45deg, #d8712e, #905BFD);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.carte_note_enchantee {
+  background-color: #fcdfdb;
+  margin-left: 30%;
+  width: 550px;
+  height: 900px;
+}
+.carte_note_enchantee:hover {
+  transform: scale(1);
+}
+.carte_note_enchantee h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.carte_note_enchantee h4::before {
+  content: "";
+  text-decoration: line-through;
+}
+
+.carte_le_delice_des_papilles {
+  background-color: #EDEFEF;
+  margin-left: 30%;
+  width: 550px;
+  height: 900px;
+}
+.carte_le_delice_des_papilles:hover {
+  transform: scale(1);
+}
+.carte_le_delice_des_papilles h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.carte_le_delice_des_papilles h4::before {
+  content: "";
+  text-decoration: line-through;
+}
+
+.titre_carte2 {
+  background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.entree3 {
+  padding-left: 20px;
+}
+
+.plat3 {
+  padding-left: 20px;
+}
+
+.dessert3 {
+  padding-left: 20px;
+}
+
+.carte_la_palette_du_gout {
+  background-color: #FDFFFD;
+  margin-left: 30%;
+  width: 550px;
+  height: 700px;
+}
+.carte_la_palette_du_gout:hover {
+  transform: scale(1);
+}
+.carte_la_palette_du_gout h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.carte_la_palette_du_gout h4::before {
+  content: "";
+  text-decoration: line-through;
+}
+
+.titre_carte3 {
+  background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.entree3 {
+  padding-left: 20px;
+}
+
+.plat3 {
+  padding-left: 20px;
+}
+
+.dessert3 {
   padding-left: 20px;
 }
 
