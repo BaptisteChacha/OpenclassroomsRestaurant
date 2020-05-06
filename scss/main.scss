@@ -301,9 +301,12 @@ body{
     h4 {
     text-align: center;
     padding-top: 10px;
-      &::before{
+      &::before, &::after{
+        border: 1px solid black;
         content: "";
-        text-decoration: line-through;
+        width: 4rem;
+        display: inline-block;
+        margin-right: 1rem;
       }
     }
   }

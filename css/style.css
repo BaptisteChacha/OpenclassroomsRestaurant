@@ -313,9 +313,12 @@ body {
   text-align: center;
   padding-top: 10px;
 }
-.carte_note_enchantee h4::before {
+.carte_note_enchantee h4::before, .carte_note_enchantee h4::after {
+  border: 1px solid black;
   content: "";
-  text-decoration: line-through;
+  width: 4rem;
+  display: inline-block;
+  margin-right: 1rem;
 }
 
 .carte_le_delice_des_papilles {
