@@ -1,13 +1,32 @@
 $shake-intensity: 5%;
+@mixin decoration($color, $taille){
+  h4 {
+      text-align: center;
+      padding-top: 10px;
+  
+      &::before, &::after {
+        border: 2px solid $color;
+        content: "";
+        width: $taille;
+        display: inline-block;
+        margin-right: 1rem;
+        margin-left: 1rem;
+      }
+    }
+  }
+
 header {
   background-color: #579c87;
   height: 80px;
 }
+
 h1 {
   color: #fdcb46;
   text-align: center;
   padding-top: 2%;
+  margin-top: 0px;
 }
+
 footer {
   background-color: #579c87;
   display: flex;
@@ -20,30 +39,36 @@ footer {
   position: fixed;
   width: 97%;
   bottom: 0;
- 
+
   .mentions {
     &:hover {
       animation: headshake 500ms infinite;
+
       @keyframes headshake {
         25% {
           // entièrement à droite
           transform: translateX($shake-intensity);
         }
+
         75% {
           // entièrement à gauche
           transform: translateX($shake-intensity * -1);
         }
       }
     }
+    padding-left: 0px;
   }
+
   .contact {
     &:hover {
       animation: headshake 500ms infinite;
+
       @keyframes headshake {
         25% {
           // entièrement à droite
           transform: translateX($shake-intensity);
         }
+
         75% {
           // entièrement à gauche
           transform: translateX($shake-intensity * -1);
@@ -51,11 +76,13 @@ footer {
       }
     }
   }
+
   a {
     text-decoration: none;
     color: #fdcb46;
   }
 }
+
 aside {
   background-color: #579c87;
   color: #fdcb46;
@@ -67,19 +94,23 @@ aside {
 
   padding-bottom: 15px;
   text-transform: uppercase;
+
   .pts-animation {
     font-size: 30px;
     padding-bottom: 10%;
   }
+
   &:hover {
     .pts-animation {
       animation: pts 2000ms backwards infinite;
     }
   }
 }
+
 .flexbox {
   padding-left: 20%;
   display: flex;
+
   a {
     text-decoration: none;
   }
@@ -94,19 +125,24 @@ section {
   margin-left: 100px;
   transform: scale(1);
   transition: transform 400ms;
+
   &:hover {
     transform: scale(1.15);
   }
+
   h3 {
     text-align: center;
     box-shadow: #fdcb46;
   }
+
   h2 {
     text-align: center;
   }
 }
+
 .bloc1 {
   background-color: #fcdfdb;
+
   .fas {
     padding-top: 30%;
     font-size: 40px;
@@ -114,66 +150,80 @@ section {
     padding-left: 42%;
     color: #8d6464;
   }
+
   a {
     text-decoration: none;
     color: black;
   }
+
   &:hover {
     background-color: darken(#fcdfdb, 5);
   }
 }
+
 .bloc2 {
   background-color: #fff5fe;
+
   &:hover {
     background-color: darken(#fff5fe, 5);
   }
+
   a {
-    background: -webkit-linear-gradient(45deg, #d8712e,#905BFD);
+    background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
-  h3 {
-    padding-top: 50%;
-    background: -webkit-linear-gradient(45deg, #d8712e,#905BFD);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   }
 
-.bloc3 {
-  background-color: #f9f9f9;
-  &:hover {
-    background-color: darken(#f9f9f9, 5);
-  }
-  a {
-    background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
   h3 {
     padding-top: 50%;
-    background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  }
-.bloc4 {
-  background-color: #fdfffd;
-  &:hover {
-    background-color: darken(#fdfffd, 5);
-  }
-  a {
-    background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  h3 {
-    padding-top: 50%;
-    background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+    background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 }
+
+.bloc3 {
+  background-color: #f9f9f9;
+
+  &:hover {
+    background-color: darken(#f9f9f9, 5);
+  }
+
+  a {
+    background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h3 {
+    padding-top: 50%;
+    background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.bloc4 {
+  background-color: #fdfffd;
+
+  &:hover {
+    background-color: darken(#fdfffd, 5);
+  }
+
+  a {
+    background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  h3 {
+    padding-top: 50%;
+    background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 .contact {
   a {
     color: #fdcb46;
@@ -185,192 +235,222 @@ section {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
-.carte_note_enchantee {
-  background-color: #fcdfdb;
+
+.carte_chic_a_la_francaise {
+  background-color: white;
   margin-left: 30%;
   width: 550px;
-  height: 900px;
+  height: 700px;
+
   &:hover {
     transform: scale(1);
   }
+}
+
+body {
+  padding-bottom: 100px;
+  margin: 0px;
+}
+
+.fas {
+  background: -webkit-linear-gradient(30deg, #f05561, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 426px) {
+  article {
+    padding-left: 0%;
+  }
+
+  section {
+    padding-left: 35%;
+  }
+}
+
+.entree {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(black,12rem )
+}
+
+.titre_entrée {
+  color: #c67412;
+}
+
+.entree2 {
+  padding-left: 20px;
+  color: #c67412;
+  padding-bottom: 10px;
+  @include decoration(#c67412, 8.3rem)
+}
+
+.plat {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(black,10.7rem )
+}
+
+.titre_plat {
+  color: #a56799;
+}
+
+.plat2 {
+  padding-left: 20px;
+  color: #a56799;
+  padding-bottom: 10px;
+  @include decoration(#a56799,9.8rem )
+}
+
+.titre_dessert {
+  color: #6e4ccc;
+}
+
+.dessert2 {
+  padding-left: 20px;
+  color: #6e4ccc;
+  @include decoration(#6e4ccc,9rem )
+}
+
+.dessert {
+  padding-left: 20px;
+  @include decoration(black,9.9rem )
+}
+
+.fin_de_carte {
+  text-align: left;
+  padding-right: 25%;
+}
+
+.titre_carte {
+  background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.carte_note_enchantee {
+  background-color: #fcdfdb;
+  margin-left: 25%;
+  width: 550px;
+  height: 900px;
   .fas {
     padding-top: 5%;
     font-size: 40px;
     padding-left: 45%;
     color: #8d6464;
   }
+  &:hover {
+    transform: scale(1);
+  }
+}
+
+.carte_le_delice_des_papilles {
+  background-color: #edefef;
+  margin-left: 30%;
+  width: 550px;
+  height: 600px;
+
+  &:hover {
+    transform: scale(1);
+  }
+
   h4 {
-  text-align: center;
-  padding-top: 10px;
-    &::before{
+    text-align: center;
+    padding-top: 10px;
+
+    &::before, &::after {
+      border: 2px solid #2140df;
       content: "";
-      text-decoration: line-through;
+      width: 9rem;
+      display: inline-block;
+      margin-right: 1rem;
+      margin-left: 1rem;
     }
   }
 }
-.carte_chic_a_la_francaise{
-  background-color: white;
+
+.titre_carte2 {
+  background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  padding-top: 60px;
+}
+
+.dessert3 {
+  padding-left: 20px;
+  @include decoration(#229DF9, 10.1rem)
+}
+
+.carte_la_palette_du_gout {
+  background-color: #fdfffd;
   margin-left: 30%;
   width: 550px;
-  height: 700px;
+  height: 600px;
+
   &:hover {
     transform: scale(1);
   }
-  h4 {
-    text-align: center;
-    padding-top: 10px;
-      &::before{
-        content: "";
-        text-decoration: line-through;
-      }
-    }
 }
-body{
-    padding-bottom: 100px;
+
+.titre_carte3 {
+  background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
 }
-.fas{
-    background: -webkit-linear-gradient(30deg, #F05561, #F6916A);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-@media screen and (max-width:426px){
-  article{
-    padding-left: 0%;
-  }
-  section{
-    padding-left: 35%;
-  }
-}
-.entree{
+
+.entree3 {
   padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(#0228DD, 9.5rem)
 }
-.titre_entrée{
-  color: #C67412;
-}
-.entree2{
+
+.plat3 {
   padding-left: 20px;
-  color: #C67412;
+  padding-bottom: 10px;
+  @include decoration(#0670F3, 10rem)
 }
-.prix{
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;
-  
-}
-.plat{
+
+.entree4 {
   padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(#45993E, 12rem);
 }
-.titre_plat{
-  color: #A56799;
-}
-.plat2{
+.plat4 {
   padding-left: 20px;
-  color: #A56799;
+  padding-bottom: 10px;
+  @include decoration (#45993E, 10rem);
 }
-.titre_dessert{
-  color: #6E4CCC;
-}
-.dessert2{
+.dessert4 {
   padding-left: 20px;
-  color: #6E4CCC;
+  @include decoration(#45993E, 9.6rem);
 }
-.dessert{
-  padding-left: 20px;
+
+.price {
+  font-weight: bold;
+  float: right;
+  padding-right: 30px;
 }
-.fin_de_carte{
-  text-align: left;
+
+p {
+  line-height: 25px;
+  padding-left: 25px;
 }
-.titre_carte{
-    background: -webkit-linear-gradient(45deg, #d8712e, #905BFD);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
+@media screen and (max-width:1024px){
+  .flexbox{
+  padding-left: 5%;
+  }
 }
-  .carte_note_enchantee {
-    background-color: #fcdfdb;
-    margin-left: 30%;
-    width: 550px;
-    height: 900px;
-    &:hover {
-      transform: scale(1);
-    }
-    h4 {
-    text-align: center;
-    padding-top: 10px;
-      &::before, &::after{
-        border: 1px solid black;
-        content: "";
-        width: 4rem;
-        display: inline-block;
-        margin-right: 1rem;
-      }
-    }
+@media screen and (max-width:320px){
+  footer{
+  position: fixed;
+  width: 97%;
   }
-.carte_le_delice_des_papilles{
-    background-color: #EDEFEF;
-    margin-left: 30%;
-    width: 550px;
-    height: 900px;
-    &:hover {
-      transform: scale(1);
-    }
-    h4 {
-    text-align: center;
-    padding-top: 10px;
-      &::before{
-        content: "";
-        text-decoration: line-through;
-      }
-    }
-  }
-  .titre_carte2{
-    background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
-  }
-  .entree3{
-    padding-left: 20px;
-  }
-  .plat3{
-    padding-left: 20px;
-  }
-  .dessert3{
-    padding-left: 20px;
-  }
-  .carte_la_palette_du_gout{
-    background-color: #FDFFFD;
-  margin-left: 30%;
-  width: 550px;
-  height: 700px;
-  &:hover {
-    transform: scale(1);
-  }
-  h4 {
-    text-align: center;
-    padding-top: 10px;
-      &::before{
-        content: "";
-        text-decoration: line-through;
-      }
-    }
-  }
-  .titre_carte3{
-    background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
-  }
-  .entree3{
-    padding-left: 20px;
-  }
-  .plat3{
-    padding-left: 20px;
-  }
-  .dessert3{
-    padding-left: 20px;
-  }
+}

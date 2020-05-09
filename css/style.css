@@ -8,6 +8,7 @@ h1 {
   color: #fdcb46;
   text-align: center;
   padding-top: 2%;
+  margin-top: 0px;
 }
 
 footer {
@@ -22,6 +23,9 @@ footer {
   position: fixed;
   width: 97%;
   bottom: 0;
+}
+footer .mentions {
+  padding-left: 0px;
 }
 footer .mentions:hover {
   animation: headshake 500ms infinite;
@@ -123,13 +127,13 @@ section h2 {
   background-color: #ffdcfb;
 }
 .bloc2 a {
-  background: -webkit-linear-gradient(45deg, #d8712e, #905BFD);
+  background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .bloc2 h3 {
   padding-top: 50%;
-  background: -webkit-linear-gradient(45deg, #d8712e, #905BFD);
+  background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -141,13 +145,13 @@ section h2 {
   background-color: #ececec;
 }
 .bloc3 a {
-  background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
+  background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .bloc3 h3 {
   padding-top: 50%;
-  background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
+  background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -159,13 +163,13 @@ section h2 {
   background-color: #e4ffe4;
 }
 .bloc4 a {
-  background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+  background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .bloc4 h3 {
   padding-top: 50%;
-  background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+  background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -183,30 +187,6 @@ section h2 {
     opacity: 1;
   }
 }
-.carte_note_enchantee {
-  background-color: #fcdfdb;
-  margin-left: 30%;
-  width: 550px;
-  height: 900px;
-}
-.carte_note_enchantee:hover {
-  transform: scale(1);
-}
-.carte_note_enchantee .fas {
-  padding-top: 5%;
-  font-size: 40px;
-  padding-left: 45%;
-  color: #8d6464;
-}
-.carte_note_enchantee h4 {
-  text-align: center;
-  padding-top: 10px;
-}
-.carte_note_enchantee h4::before {
-  content: "";
-  text-decoration: line-through;
-}
-
 .carte_chic_a_la_francaise {
   background-color: white;
   margin-left: 30%;
@@ -216,21 +196,14 @@ section h2 {
 .carte_chic_a_la_francaise:hover {
   transform: scale(1);
 }
-.carte_chic_a_la_francaise h4 {
-  text-align: center;
-  padding-top: 10px;
-}
-.carte_chic_a_la_francaise h4::before {
-  content: "";
-  text-decoration: line-through;
-}
 
 body {
   padding-bottom: 100px;
+  margin: 0px;
 }
 
 .fas {
-  background: -webkit-linear-gradient(30deg, #F05561, #F6916A);
+  background: -webkit-linear-gradient(30deg, #f05561, #f6916a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -246,55 +219,126 @@ body {
 }
 .entree {
   padding-left: 20px;
+  padding-bottom: 10px;
+}
+.entree h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.entree h4::before, .entree h4::after {
+  border: 2px solid black;
+  content: "";
+  width: 12rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .titre_entrée {
-  color: #C67412;
+  color: #c67412;
 }
 
 .entree2 {
   padding-left: 20px;
-  color: #C67412;
+  color: #c67412;
+  padding-bottom: 10px;
 }
-
-.prix {
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 10px;
+.entree2 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.entree2 h4::before, .entree2 h4::after {
+  border: 2px solid #c67412;
+  content: "";
+  width: 8.3rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .plat {
   padding-left: 20px;
+  padding-bottom: 10px;
+}
+.plat h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.plat h4::before, .plat h4::after {
+  border: 2px solid black;
+  content: "";
+  width: 10.7rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .titre_plat {
-  color: #A56799;
+  color: #a56799;
 }
 
 .plat2 {
   padding-left: 20px;
-  color: #A56799;
+  color: #a56799;
+  padding-bottom: 10px;
+}
+.plat2 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.plat2 h4::before, .plat2 h4::after {
+  border: 2px solid #a56799;
+  content: "";
+  width: 9.8rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .titre_dessert {
-  color: #6E4CCC;
+  color: #6e4ccc;
 }
 
 .dessert2 {
   padding-left: 20px;
-  color: #6E4CCC;
+  color: #6e4ccc;
+}
+.dessert2 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.dessert2 h4::before, .dessert2 h4::after {
+  border: 2px solid #6e4ccc;
+  content: "";
+  width: 9rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .dessert {
   padding-left: 20px;
 }
+.dessert h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.dessert h4::before, .dessert h4::after {
+  border: 2px solid black;
+  content: "";
+  width: 9.9rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
 
 .fin_de_carte {
   text-align: left;
+  padding-right: 25%;
 }
 
 .titre_carte {
-  background: -webkit-linear-gradient(45deg, #d8712e, #905BFD);
+  background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
@@ -302,30 +346,25 @@ body {
 
 .carte_note_enchantee {
   background-color: #fcdfdb;
-  margin-left: 30%;
+  margin-left: 25%;
   width: 550px;
   height: 900px;
+}
+.carte_note_enchantee .fas {
+  padding-top: 5%;
+  font-size: 40px;
+  padding-left: 45%;
+  color: #8d6464;
 }
 .carte_note_enchantee:hover {
   transform: scale(1);
 }
-.carte_note_enchantee h4 {
-  text-align: center;
-  padding-top: 10px;
-}
-.carte_note_enchantee h4::before, .carte_note_enchantee h4::after {
-  border: 1px solid black;
-  content: "";
-  width: 4rem;
-  display: inline-block;
-  margin-right: 1rem;
-}
 
 .carte_le_delice_des_papilles {
-  background-color: #EDEFEF;
+  background-color: #edefef;
   margin-left: 30%;
   width: 550px;
-  height: 900px;
+  height: 600px;
 }
 .carte_le_delice_des_papilles:hover {
   transform: scale(1);
@@ -334,50 +373,51 @@ body {
   text-align: center;
   padding-top: 10px;
 }
-.carte_le_delice_des_papilles h4::before {
+.carte_le_delice_des_papilles h4::before, .carte_le_delice_des_papilles h4::after {
+  border: 2px solid #2140df;
   content: "";
-  text-decoration: line-through;
+  width: 9rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .titre_carte2 {
-  background: -webkit-linear-gradient(360deg, #2140df, #2B91F8);
+  background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
-}
-
-.entree3 {
-  padding-left: 20px;
-}
-
-.plat3 {
-  padding-left: 20px;
+  padding-top: 60px;
 }
 
 .dessert3 {
   padding-left: 20px;
 }
+.dessert3 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.dessert3 h4::before, .dessert3 h4::after {
+  border: 2px solid #229DF9;
+  content: "";
+  width: 10.1rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
 
 .carte_la_palette_du_gout {
-  background-color: #FDFFFD;
+  background-color: #fdfffd;
   margin-left: 30%;
   width: 550px;
-  height: 700px;
+  height: 600px;
 }
 .carte_la_palette_du_gout:hover {
   transform: scale(1);
 }
-.carte_la_palette_du_gout h4 {
-  text-align: center;
-  padding-top: 10px;
-}
-.carte_la_palette_du_gout h4::before {
-  content: "";
-  text-decoration: line-through;
-}
 
 .titre_carte3 {
-  background: -webkit-linear-gradient(40deg, #42973c, #BFFF7E);
+  background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
@@ -385,14 +425,109 @@ body {
 
 .entree3 {
   padding-left: 20px;
+  padding-bottom: 10px;
+}
+.entree3 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.entree3 h4::before, .entree3 h4::after {
+  border: 2px solid #0228DD;
+  content: "";
+  width: 9.5rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
 .plat3 {
   padding-left: 20px;
+  padding-bottom: 10px;
+}
+.plat3 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.plat3 h4::before, .plat3 h4::after {
+  border: 2px solid #0670F3;
+  content: "";
+  width: 10rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
 }
 
-.dessert3 {
+.entree4 {
   padding-left: 20px;
+  padding-bottom: 10px;
+}
+.entree4 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.entree4 h4::before, .entree4 h4::after {
+  border: 2px solid #45993E;
+  content: "";
+  width: 12rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.plat4 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.plat4 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.plat4 h4::before, .plat4 h4::after {
+  border: 2px solid #45993E;
+  content: "";
+  width: 10rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.dessert4 {
+  padding-left: 20px;
+}
+.dessert4 h4 {
+  text-align: center;
+  padding-top: 10px;
+}
+.dessert4 h4::before, .dessert4 h4::after {
+  border: 2px solid #45993E;
+  content: "";
+  width: 9.6rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.price {
+  font-weight: bold;
+  float: right;
+  padding-right: 30px;
+}
+
+p {
+  line-height: 25px;
+  padding-left: 25px;
+}
+
+@media screen and (max-width: 1024px) {
+  .flexbox {
+    padding-left: 5%;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer {
+    position: fixed;
+    width: 97%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
