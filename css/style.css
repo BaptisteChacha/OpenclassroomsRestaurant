@@ -57,20 +57,47 @@ footer a {
 aside {
   background-color: #579c87;
   color: #fdcb46;
-  text-align: Center;
   height: 30px;
-  width: 25%;
+  width: 35%;
   margin: auto;
   border-radius: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  padding-top: 5px;
   text-transform: uppercase;
+  display: flex;
 }
 aside .pts-animation {
-  font-size: 30px;
-  padding-bottom: 10%;
+  display: flex;
+  justify-content: right;
+  padding-top: 15px;
+  padding-left: 20px;
 }
-aside:hover .pts-animation {
-  animation: pts 2000ms backwards infinite;
+aside .pts-animation-1 {
+  background-color: #fdcb46;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: points 1s backwards infinite;
+  animation-delay: 0s;
+  animation-direction: alternate;
+}
+aside .pts-animation-2 {
+  background-color: #fdcb46;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: points 1s backwards infinite;
+  animation-delay: 0.1s;
+  animation-direction: alternate;
+}
+aside .pts-animation-3 {
+  background-color: #fdcb46;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  animation: points 1s backwards infinite;
+  animation-delay: 0.2s;
+  animation-direction: alternate;
 }
 
 .flexbox {
@@ -179,12 +206,12 @@ section h2 {
   text-decoration: none;
 }
 
-@keyframes pts {
+@keyframes points {
   0% {
-    opacity: 0;
+    transform: translateY(5px);
   }
   100% {
-    opacity: 1;
+    transform: translateY(-18px);
   }
 }
 .carte_chic_a_la_francaise {
@@ -208,15 +235,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 426px) {
-  article {
-    padding-left: 0%;
-  }
-
-  section {
-    padding-left: 35%;
-  }
-}
 .entree {
   padding-left: 20px;
   padding-bottom: 10px;
@@ -364,7 +382,7 @@ body {
   background-color: #edefef;
   margin-left: 30%;
   width: 550px;
-  height: 600px;
+  height: 700px;
 }
 .carte_le_delice_des_papilles:hover {
   transform: scale(1);
@@ -398,7 +416,7 @@ body {
   padding-top: 10px;
 }
 .dessert3 h4::before, .dessert3 h4::after {
-  border: 2px solid #229DF9;
+  border: 2px solid #229df9;
   content: "";
   width: 10.1rem;
   display: inline-block;
@@ -410,7 +428,7 @@ body {
   background-color: #fdfffd;
   margin-left: 30%;
   width: 550px;
-  height: 600px;
+  height: 700px;
 }
 .carte_la_palette_du_gout:hover {
   transform: scale(1);
@@ -432,7 +450,7 @@ body {
   padding-top: 10px;
 }
 .entree3 h4::before, .entree3 h4::after {
-  border: 2px solid #0228DD;
+  border: 2px solid #0228dd;
   content: "";
   width: 9.5rem;
   display: inline-block;
@@ -449,7 +467,7 @@ body {
   padding-top: 10px;
 }
 .plat3 h4::before, .plat3 h4::after {
-  border: 2px solid #0670F3;
+  border: 2px solid #0670f3;
   content: "";
   width: 10rem;
   display: inline-block;
@@ -466,7 +484,7 @@ body {
   padding-top: 10px;
 }
 .entree4 h4::before, .entree4 h4::after {
-  border: 2px solid #45993E;
+  border: 2px solid #45993e;
   content: "";
   width: 12rem;
   display: inline-block;
@@ -483,7 +501,7 @@ body {
   padding-top: 10px;
 }
 .plat4 h4::before, .plat4 h4::after {
-  border: 2px solid #45993E;
+  border: 2px solid #45993e;
   content: "";
   width: 10rem;
   display: inline-block;
@@ -499,7 +517,7 @@ body {
   padding-top: 10px;
 }
 .dessert4 h4::before, .dessert4 h4::after {
-  border: 2px solid #45993E;
+  border: 2px solid #45993e;
   content: "";
   width: 9.6rem;
   display: inline-block;
@@ -537,20 +555,34 @@ p {
 }
 @media screen and (min-width: 1024px) {
   .carte_chic_a_la_francaise {
-    margin-left: 28%;
+    margin-left: 25%;
   }
 
   .carte_note_enchantee {
-    margin-left: 28%;
+    margin-left: 25%;
   }
 
   .carte_le_delice_des_papilles {
-    margin-left: 28%;
+    margin-left: 25%;
   }
 
   .carte_la_palette_du_gout {
     margin-left: 28%;
   }
+
+  aside {
+    width: 27%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .flexbox {
+    padding-left: 10%;
+  }
+}
+.titre_aside {
+  padding-top: 10px;
+  padding-left: 50px;
+  font-size: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */

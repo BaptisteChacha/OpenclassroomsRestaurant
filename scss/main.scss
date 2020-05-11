@@ -1,19 +1,20 @@
 $shake-intensity: 5%;
-@mixin decoration($color, $taille){
+@mixin decoration($color, $taille) {
   h4 {
-      text-align: center;
-      padding-top: 10px;
-  
-      &::before, &::after {
-        border: 2px solid $color;
-        content: "";
-        width: $taille;
-        display: inline-block;
-        margin-right: 1rem;
-        margin-left: 1rem;
-      }
+    text-align: center;
+    padding-top: 10px;
+
+    &::before,
+    &::after {
+      border: 2px solid $color;
+      content: "";
+      width: $taille;
+      display: inline-block;
+      margin-right: 1rem;
+      margin-left: 1rem;
     }
   }
+}
 
 header {
   background-color: #579c87;
@@ -86,31 +87,52 @@ footer {
 aside {
   background-color: #579c87;
   color: #fdcb46;
-  text-align: Center;
   height: 30px;
-  width: 25%;
+  width: 35%;
   margin: auto;
   border-radius: 10px;
-
-  padding-bottom: 15px;
+  padding-bottom: 20px;
+  padding-top: 5px;
   text-transform: uppercase;
-
+  display: flex;
   .pts-animation {
-    font-size: 30px;
-    padding-bottom: 10%;
-  }
+    display: flex;
+    justify-content: right;
+    padding-top: 15px;
+    padding-left: 20px;
 
-  &:hover {
-    .pts-animation {
-      animation: pts 2000ms backwards infinite;
+    &-1 {
+      background-color: #fdcb46;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      animation: points 1s backwards infinite;
+      animation-delay: 0s;
+      animation-direction: alternate;
+    }
+    &-2 {
+      background-color: #fdcb46;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      animation: points 1s backwards infinite;
+      animation-delay: 0.1s;
+      animation-direction: alternate;
+    }
+    &-3 {
+      background-color: #fdcb46;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      animation: points 1s backwards infinite;
+      animation-delay: 0.2s;
+      animation-direction: alternate;
     }
   }
 }
-
 .flexbox {
   padding-left: 20%;
   display: flex;
-
   a {
     text-decoration: none;
   }
@@ -231,13 +253,12 @@ section {
   }
 }
 
-@keyframes pts {
+@keyframes points {
   0% {
-    opacity: 0;
+    transform: translateY(5px);
   }
-
   100% {
-    opacity: 1;
+    transform: translateY(-18px);
   }
 }
 
@@ -263,20 +284,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-@media screen and (max-width: 426px) {
-  article {
-    padding-left: 0%;
-  }
-
-  section {
-    padding-left: 35%;
-  }
-}
-
 .entree {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(black,12rem )
+  @include decoration(black, 12rem);
 }
 
 .titre_entrée {
@@ -287,13 +298,13 @@ body {
   padding-left: 20px;
   color: #c67412;
   padding-bottom: 10px;
-  @include decoration(#c67412, 8.3rem)
+  @include decoration(#c67412, 8.3rem);
 }
 
 .plat {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(black,10.7rem )
+  @include decoration(black, 10.7rem);
 }
 
 .titre_plat {
@@ -304,7 +315,7 @@ body {
   padding-left: 20px;
   color: #a56799;
   padding-bottom: 10px;
-  @include decoration(#a56799,9.8rem )
+  @include decoration(#a56799, 9.8rem);
 }
 
 .titre_dessert {
@@ -314,12 +325,12 @@ body {
 .dessert2 {
   padding-left: 20px;
   color: #6e4ccc;
-  @include decoration(#6e4ccc,9rem )
+  @include decoration(#6e4ccc, 9rem);
 }
 
 .dessert {
   padding-left: 20px;
-  @include decoration(black,9.9rem )
+  @include decoration(black, 9.9rem);
 }
 
 .fin_de_carte {
@@ -354,7 +365,7 @@ body {
   background-color: #edefef;
   margin-left: 30%;
   width: 550px;
-  height: 600px;
+  height: 700px;
 
   &:hover {
     transform: scale(1);
@@ -364,7 +375,8 @@ body {
     text-align: center;
     padding-top: 10px;
 
-    &::before, &::after {
+    &::before,
+    &::after {
       border: 2px solid #2140df;
       content: "";
       width: 9rem;
@@ -385,14 +397,14 @@ body {
 
 .dessert3 {
   padding-left: 20px;
-  @include decoration(#229DF9, 10.1rem)
+  @include decoration(#229df9, 10.1rem);
 }
 
 .carte_la_palette_du_gout {
   background-color: #fdfffd;
   margin-left: 30%;
   width: 550px;
-  height: 600px;
+  height: 700px;
 
   &:hover {
     transform: scale(1);
@@ -409,66 +421,77 @@ body {
 .entree3 {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(#0228DD, 9.5rem)
+  @include decoration(#0228dd, 9.5rem);
 }
 
 .plat3 {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(#0670F3, 10rem)
+  @include decoration(#0670f3, 10rem);
 }
 
 .entree4 {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(#45993E, 12rem);
+  @include decoration(#45993e, 12rem);
 }
 .plat4 {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration (#45993E, 10rem);
+  @include decoration(#45993e, 10rem);
 }
 .dessert4 {
   padding-left: 20px;
-  @include decoration(#45993E, 9.6rem);
+  @include decoration(#45993e, 9.6rem);
 }
-
 .price {
   font-weight: bold;
   float: right;
   padding-right: 30px;
 }
-
 p {
   line-height: 25px;
   padding-left: 25px;
 }
-
-@media screen and (min-width:320px){
-  .carte_chic_a_la_francaise{
+@media screen and (min-width: 320px) {
+  .carte_chic_a_la_francaise {
     margin-left: 23%;
   }
-  .carte_note_enchantee{
+  .carte_note_enchantee {
     margin-left: 23%;
   }
-  .carte_le_delice_des_papilles{
+  .carte_le_delice_des_papilles {
     margin-left: 23%;
   }
-  .carte_la_palette_du_gout{
+  .carte_la_palette_du_gout {
     margin-left: 23%;
   }
 }
-@media screen and (min-width:1024px){
-  .carte_chic_a_la_francaise{
+@media screen and (min-width: 1024px) {
+  .carte_chic_a_la_francaise {
+    margin-left: 25%;
+  }
+  .carte_note_enchantee {
+    margin-left: 25%;
+  }
+  .carte_le_delice_des_papilles {
+    margin-left: 25%;
+  }
+  .carte_la_palette_du_gout {
     margin-left: 28%;
   }
-  .carte_note_enchantee{
-    margin-left: 28%;
+  aside {
+    width: 27%;
   }
-  .carte_le_delice_des_papilles{
-    margin-left: 28%;
+}
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  .flexbox {
+    padding-left: 10%;
   }
-  .carte_la_palette_du_gout{
-    margin-left: 28%;
-  }
+}
+
+.titre_aside {
+  padding-top: 10px;
+  padding-left: 50px;
+  font-size: 25px;
 }
