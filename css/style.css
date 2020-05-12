@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes wiggle {
+  25% {
+    transform: translateX(5%);
+  }
+  75% {
+    transform: translateX(-5%);
+  }
+}
 header {
   background-color: #579c87;
   height: 80px;
@@ -28,26 +36,10 @@ footer .mentions {
   padding-left: 0px;
 }
 footer .mentions:hover {
-  animation: headshake 500ms infinite;
-}
-@keyframes headshake {
-  25% {
-    transform: translateX(5%);
-  }
-  75% {
-    transform: translateX(-5%);
-  }
+  animation: wiggle 500ms infinite;
 }
 footer .contact:hover {
-  animation: headshake 500ms infinite;
-}
-@keyframes headshake {
-  25% {
-    transform: translateX(5%);
-  }
-  75% {
-    transform: translateX(-5%);
-  }
+  animation: wiggle 500ms infinite;
 }
 footer a {
   text-decoration: none;
@@ -123,7 +115,6 @@ section:hover {
 }
 section h3 {
   text-align: center;
-  box-shadow: #fdcb46;
 }
 section h2 {
   text-align: center;
@@ -131,6 +122,7 @@ section h2 {
 
 .bloc1 {
   background-color: #fcdfdb;
+  font-family: "Arial Narrow";
 }
 .bloc1 .fas {
   padding-top: 30%;
@@ -370,6 +362,7 @@ body {
   margin-left: 25%;
   width: 650px;
   height: 900px;
+  font-family: "Arial Narrow";
 }
 .carte_note_enchantee h4 {
   text-align: center;
