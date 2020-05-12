@@ -581,18 +581,22 @@ p {
 
   .carte_chic_a_la_francaise {
     font-size: 15px;
+    flex-wrap: wrap;
   }
 
   .carte_note_enchantee {
     font-size: 15px;
+    flex-wrap: wrap;
   }
 
   .carte_le_delice_des_papilles {
     font-size: 15px;
+    flex-wrap: wrap;
   }
 
   .carte_la_palette_du_gout {
     font-size: 15px;
+    flex-wrap: wrap;
   }
 }
 .titre_aside {
