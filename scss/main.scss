@@ -453,6 +453,8 @@ body {
 p {
   line-height: 25px;
   padding-left: 25px;
+  clear: both;
+  text-align: left;
 }
 @media screen and (min-width: 320px) {
   .carte_chic_a_la_francaise {
