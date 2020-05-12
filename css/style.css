@@ -217,7 +217,7 @@ section h2 {
 .carte_chic_a_la_francaise {
   background-color: white;
   margin-left: 30%;
-  width: 600px;
+  width: 650px;
   height: 700px;
 }
 .carte_chic_a_la_francaise h4 {
@@ -368,7 +368,7 @@ body {
 .carte_note_enchantee {
   background-color: #fcdfdb;
   margin-left: 25%;
-  width: 550px;
+  width: 650px;
   height: 900px;
 }
 .carte_note_enchantee h4 {
@@ -387,7 +387,7 @@ body {
 .carte_le_delice_des_papilles {
   background-color: #edefef;
   margin-left: 30%;
-  width: 550px;
+  width: 650px;
   height: 700px;
 }
 .carte_le_delice_des_papilles:hover {
@@ -425,7 +425,7 @@ body {
 .carte_la_palette_du_gout {
   background-color: #fdfffd;
   margin-left: 30%;
-  width: 600px;
+  width: 650px;
   height: 700px;
 }
 .carte_la_palette_du_gout h4 {

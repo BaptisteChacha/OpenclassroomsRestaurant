@@ -265,7 +265,7 @@ section {
 .carte_chic_a_la_francaise {
   background-color: white;
   margin-left: 30%;
-  width: 600px;
+  width: 650px;
   height: 700px;
   h4{
     text-align: center;
@@ -362,7 +362,7 @@ body {
 .carte_note_enchantee {
   background-color: #fcdfdb;
   margin-left: 25%;
-  width: 550px;
+  width: 650px;
   height: 900px;
 
   h4{
@@ -382,7 +382,7 @@ body {
 .carte_le_delice_des_papilles {
   background-color: #edefef;
   margin-left: 30%;
-  width: 550px;
+  width: 650px;
   height: 700px;
   &:hover {
     transform: scale(1);
@@ -411,7 +411,7 @@ body {
 .carte_la_palette_du_gout {
   background-color: #fdfffd;
   margin-left: 30%;
-  width: 600px;
+  width: 650px;
   height: 700px;
   h4{
     text-align: center;
@@ -476,7 +476,7 @@ p {
   clear: both;
   text-align: left;
 }
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 320px){
   .carte_chic_a_la_francaise {
     margin-left: 23%;
   }
