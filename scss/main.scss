@@ -63,12 +63,11 @@ footer {
       animation: wiggle 500ms infinite;
     }
   }
+}
   a {
     text-decoration: none;
     color: #fdcb46;
   }
-}
-
 aside {
   background-color: #579c87;
   color: #fdcb46;
@@ -84,7 +83,7 @@ aside {
     display: flex;
     justify-content: right;
     padding-top: 15px;
-    padding-left: 20px;
+    padding-left: 10px;
     &-1 {
       background-color: #fdcb46;
       height: 10px;
@@ -144,7 +143,7 @@ section {
 }
 .bloc1 {
   background-color: #fcdfdb;
-  font-family: 'Arial Narrow';
+  font-family: "Arial Narrow";
   .fas {
     padding-top: 30%;
     font-size: 40px;
@@ -223,10 +222,10 @@ section {
 }
 @keyframes points {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(-18px);
+    transform: translateY(-10px);
   }
 }
 .carte_chic_a_la_francaise {
@@ -234,7 +233,7 @@ section {
   margin-left: 30%;
   width: 650px;
   height: 700px;
-  h4{
+  h4 {
     text-align: center;
   }
   &:hover {
@@ -254,8 +253,8 @@ body {
 .entree {
   padding-left: 20px;
   padding-bottom: 10px;
-  &:hover{
-  @include decoration(black, 12rem);
+  &:hover {
+    @include decoration(black, 12rem);
   }
 }
 
@@ -267,17 +266,17 @@ body {
   padding-left: 20px;
   color: #c67412;
   padding-bottom: 10px;
-  &:hover{
-  @include decoration(#c67412, 8.3rem);
-}
+  &:hover {
+    @include decoration(#c67412, 8.3rem);
+  }
 }
 
 .plat {
   padding-left: 20px;
   padding-bottom: 10px;
-  &:hover{
-  @include decoration(black, 10.7rem);
-}
+  &:hover {
+    @include decoration(black, 10.7rem);
+  }
 }
 
 .titre_plat {
@@ -288,9 +287,9 @@ body {
   padding-left: 20px;
   color: #a56799;
   padding-bottom: 10px;
-  &:hover{
-  @include decoration(#a56799, 9.8rem);
-}
+  &:hover {
+    @include decoration(#a56799, 9.8rem);
+  }
 }
 
 .titre_dessert {
@@ -300,16 +299,16 @@ body {
 .dessert2 {
   padding-left: 20px;
   color: #6e4ccc;
-  &:hover{
-  @include decoration(#6e4ccc, 9rem);
-}
+  &:hover {
+    @include decoration(#6e4ccc, 9rem);
+  }
 }
 
 .dessert {
   padding-left: 20px;
-  &:hover{
-  @include decoration(black, 9.9rem);
-}
+  &:hover {
+    @include decoration(black, 9.9rem);
+  }
 }
 
 .fin_de_carte {
@@ -329,8 +328,8 @@ body {
   margin-left: 25%;
   width: 650px;
   height: 900px;
-  font-family: 'Arial Narrow';
-  h4{
+  font-family: "Arial Narrow";
+  h4 {
     text-align: center;
   }
   .fas {
@@ -368,9 +367,9 @@ body {
 
 .dessert3 {
   padding-left: 20px;
-  &:hover{
-  @include decoration(#229df9, 10.1rem);
-}
+  &:hover {
+    @include decoration(#229df9, 10.1rem);
+  }
 }
 
 .carte_la_palette_du_gout {
@@ -378,7 +377,7 @@ body {
   margin-left: 30%;
   width: 650px;
   height: 700px;
-  h4{
+  h4 {
     text-align: center;
   }
   &:hover {
@@ -396,38 +395,38 @@ body {
 .entree3 {
   padding-left: 20px;
   padding-bottom: 10px;
-  &:hover{
-  @include decoration(#0228dd, 9.5rem);
-}
+  &:hover {
+    @include decoration(#0228dd, 9.5rem);
+  }
 }
 
 .plat3 {
   padding-left: 20px;
   padding-bottom: 10px;
-  &:hover{
-  @include decoration(#0670f3, 10rem);
-}
+  &:hover {
+    @include decoration(#0670f3, 10rem);
+  }
 }
 
 .entree4 {
   padding-left: 20px;
   padding-bottom: 10px;
-  &:hover{
-  @include decoration(#45993e, 12rem);
-}
+  &:hover {
+    @include decoration(#45993e, 12rem);
+  }
 }
 .plat4 {
   padding-left: 20px;
   padding-bottom: 10px;
-  &:hover{
-  @include decoration(#45993e, 10rem);
-}
+  &:hover {
+    @include decoration(#45993e, 10rem);
+  }
 }
 .dessert4 {
   padding-left: 20px;
-  &:hover{
-  @include decoration(#45993e, 9.6rem);
-}
+  &:hover {
+    @include decoration(#45993e, 9.6rem);
+  }
 }
 .price {
   font-weight: bold;
@@ -441,79 +440,119 @@ p {
   clear: both;
   text-align: left;
 }
-@media screen and (min-width: 320px){
+@media screen and (min-width: 320px) {
   .carte_chic_a_la_francaise {
-    margin-left: 23%;
+    margin-left: 18%;
   }
   .carte_note_enchantee {
-    margin-left: 23%;
+    margin-left: 18%;
   }
   .carte_le_delice_des_papilles {
-    margin-left: 23%;
+    margin-left: 18%;
   }
   .carte_la_palette_du_gout {
-    margin-left: 23%;
+    margin-left: 18%;
+  }
+}
+@media screen and (min-width:320px) and (max-width:768px){
+  .carte_chic_a_la_francaise{
+    width: 700px;
+    font-size: 20px;
+  }
+  .carte_note_enchantee{
+    width: 700px;
+    font-size: 20px;
+  }
+  .carte_le_delice_des_papilles{
+    width: 700px;
+    font-size: 20px;
+  }
+  .carte_la_palette_du_gout{
+    width: 700px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .carte_chic_a_la_francaise {
-    margin-left: 25%;
-  }
-  .carte_note_enchantee {
-    margin-left: 25%;
-  }
-  .carte_le_delice_des_papilles {
-    margin-left: 25%;
-  }
-  .carte_la_palette_du_gout {
-    margin-left: 25%;
-  }
   aside {
-    width: 27%;
+    width: 33%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
-  .price{
+  .price {
     padding-left: 0px;
     padding-right: 10px;
   }
   .flexbox {
     padding-left: 8%;
   }
-  .carte_chic_a_la_francaise{
+  .carte_chic_a_la_francaise {
     font-size: 15px;
     flex-wrap: wrap;
   }
-  .carte_note_enchantee{
+  .carte_note_enchantee {
     font-size: 15px;
     flex-wrap: wrap;
   }
-  .carte_le_delice_des_papilles{
+  .carte_le_delice_des_papilles {
     font-size: 15px;
     flex-wrap: wrap;
   }
-  .carte_la_palette_du_gout{
+  .carte_la_palette_du_gout {
     font-size: 15px;
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width:1440px){
-  .carte_chic_a_la_francaise{
-    margin-left: 33%;
+@media screen and (min-width: 1440px) and (max-width:2560px){
+  .flexbox {
+    padding-left: 22%;
+    padding-top: 3%;
   }
-  .carte_note_enchantee{
-    margin-left: 33%;
+  header {
+    height: 100px;
   }
-  .carte_le_delice_des_papilles{
-    margin-left: 33%;
+  .carte_chic_a_la_francaise {
+    margin-left: 30%;
   }
-  .carte_la_palette_du_gout{
-    margin-left: 33%;
+  .carte_note_enchantee {
+    margin-left: 30%;
+  }
+  .carte_le_delice_des_papilles {
+    margin-left: 30%;
+  }
+  .carte_la_palette_du_gout {
+    margin-left: 30%;
   }
 }
-
 .titre_aside {
   padding-top: 10px;
   padding-left: 50px;
   font-size: 25px;
+}
+@media screen and (min-width: 2560px) {
+  .flexbox {
+    padding-left: 33%;
+  }
+  aside{
+    width: 14%;
+  }
+  footer{
+    width: 98.5%;
+  }
+  .carte_chic_a_la_francaise{
+    margin-left: 38%;
+  }
+  .carte_note_enchantee{
+    margin-left: 38%;
+  }
+  .carte_le_delice_des_papilles{
+    margin-left: 38%;
+  }
+  .carte_la_palette_du_gout{
+    margin-left: 38%;
+  }
+}
+@media screen and (min-width:1025px) and (max-width:1440px){
+  aside{
+    width: 25%;
+  }
 }

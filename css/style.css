@@ -41,7 +41,8 @@ footer .mentions:hover {
 footer .contact:hover {
   animation: wiggle 500ms infinite;
 }
-footer a {
+
+a {
   text-decoration: none;
   color: #fdcb46;
 }
@@ -62,7 +63,7 @@ aside .pts-animation {
   display: flex;
   justify-content: right;
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 aside .pts-animation-1 {
   background-color: #fdcb46;
@@ -200,10 +201,10 @@ section h2 {
 
 @keyframes points {
   0% {
-    transform: translateY(5px);
+    transform: translateY(10px);
   }
   100% {
-    transform: translateY(-18px);
+    transform: translateY(-10px);
   }
 }
 .carte_chic_a_la_francaise {
@@ -535,40 +536,45 @@ p {
 
 @media screen and (min-width: 320px) {
   .carte_chic_a_la_francaise {
-    margin-left: 23%;
+    margin-left: 18%;
   }
 
   .carte_note_enchantee {
-    margin-left: 23%;
+    margin-left: 18%;
   }
 
   .carte_le_delice_des_papilles {
-    margin-left: 23%;
+    margin-left: 18%;
   }
 
   .carte_la_palette_du_gout {
-    margin-left: 23%;
+    margin-left: 18%;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  .carte_chic_a_la_francaise {
+    width: 700px;
+    font-size: 20px;
+  }
+
+  .carte_note_enchantee {
+    width: 700px;
+    font-size: 20px;
+  }
+
+  .carte_le_delice_des_papilles {
+    width: 700px;
+    font-size: 20px;
+  }
+
+  .carte_la_palette_du_gout {
+    width: 700px;
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 1024px) {
-  .carte_chic_a_la_francaise {
-    margin-left: 25%;
-  }
-
-  .carte_note_enchantee {
-    margin-left: 25%;
-  }
-
-  .carte_le_delice_des_papilles {
-    margin-left: 25%;
-  }
-
-  .carte_la_palette_du_gout {
-    margin-left: 25%;
-  }
-
   aside {
-    width: 27%;
+    width: 33%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 1024px) {
@@ -601,27 +607,71 @@ p {
     flex-wrap: wrap;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1440px) and (max-width: 2560px) {
+  .flexbox {
+    padding-left: 22%;
+    padding-top: 3%;
+  }
+
+  header {
+    height: 100px;
+  }
+
   .carte_chic_a_la_francaise {
-    margin-left: 33%;
+    margin-left: 30%;
   }
 
   .carte_note_enchantee {
-    margin-left: 33%;
+    margin-left: 30%;
   }
 
   .carte_le_delice_des_papilles {
-    margin-left: 33%;
+    margin-left: 30%;
   }
 
   .carte_la_palette_du_gout {
-    margin-left: 33%;
+    margin-left: 30%;
   }
 }
 .titre_aside {
   padding-top: 10px;
   padding-left: 50px;
   font-size: 25px;
+}
+
+@media screen and (min-width: 2560px) {
+  .flexbox {
+    padding-left: 33%;
+  }
+
+  aside {
+    width: 14%;
+  }
+
+  footer {
+    width: 98.5%;
+  }
+
+  .carte_chic_a_la_francaise {
+    margin-left: 38%;
+  }
+
+  .carte_note_enchantee {
+    margin-left: 38%;
+  }
+
+  .carte_le_delice_des_papilles {
+    margin-left: 38%;
+  }
+
+  .carte_la_palette_du_gout {
+    margin-left: 38%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  aside {
+    width: 25%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
