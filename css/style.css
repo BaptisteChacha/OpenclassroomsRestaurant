@@ -1,4 +1,8 @@
 @charset "UTF-8";
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 @keyframes wiggle {
   25% {
     transform: translateX(5%);
@@ -237,7 +241,6 @@ body {
 }
 .entree:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .entree:hover h4::before, .entree:hover h4::after {
   border: 2px solid black;
@@ -259,7 +262,6 @@ body {
 }
 .entree2:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .entree2:hover h4::before, .entree2:hover h4::after {
   border: 2px solid #c67412;
@@ -276,7 +278,6 @@ body {
 }
 .plat:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .plat:hover h4::before, .plat:hover h4::after {
   border: 2px solid black;
@@ -298,7 +299,6 @@ body {
 }
 .plat2:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .plat2:hover h4::before, .plat2:hover h4::after {
   border: 2px solid #a56799;
@@ -319,7 +319,6 @@ body {
 }
 .dessert2:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .dessert2:hover h4::before, .dessert2:hover h4::after {
   border: 2px solid #6e4ccc;
@@ -335,7 +334,6 @@ body {
 }
 .dessert:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .dessert:hover h4::before, .dessert:hover h4::after {
   border: 2px solid black;
@@ -371,7 +369,7 @@ body {
 .carte_note_enchantee .fas {
   padding-top: 5%;
   font-size: 40px;
-  padding-left: 45%;
+  padding-left: 48%;
   color: #8d6464;
 }
 .carte_note_enchantee:hover {
@@ -405,7 +403,6 @@ body {
 }
 .dessert3:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .dessert3:hover h4::before, .dessert3:hover h4::after {
   border: 2px solid #229df9;
@@ -442,7 +439,6 @@ body {
 }
 .entree3:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .entree3:hover h4::before, .entree3:hover h4::after {
   border: 2px solid #0228dd;
@@ -459,7 +455,6 @@ body {
 }
 .plat3:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .plat3:hover h4::before, .plat3:hover h4::after {
   border: 2px solid #0670f3;
@@ -476,7 +471,6 @@ body {
 }
 .entree4:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .entree4:hover h4::before, .entree4:hover h4::after {
   border: 2px solid #45993e;
@@ -493,7 +487,6 @@ body {
 }
 .plat4:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .plat4:hover h4::before, .plat4:hover h4::after {
   border: 2px solid #45993e;
@@ -509,7 +502,6 @@ body {
 }
 .dessert4:hover h4 {
   text-align: center;
-  padding-top: 10px;
 }
 .dessert4:hover h4::before, .dessert4:hover h4::after {
   border: 2px solid #45993e;
