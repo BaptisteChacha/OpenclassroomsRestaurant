@@ -1,0 +1,14 @@
+@mixin decoration($color, $taille) {
+  h4 {
+    text-align: center;
+    &::before,
+    &::after {
+      border: 2px solid $color;
+      content: "";
+      width: $taille;
+      display: inline-block;
+      margin-right: 1rem;
+      margin-left: 1rem;
+    }
+  }
+}

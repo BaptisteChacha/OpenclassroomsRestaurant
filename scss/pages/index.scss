@@ -1,0 +1,203 @@
+header {
+    background-color: #579c87;
+    height: 80px;
+  }
+  
+  h1 {
+    color: #fdcb46;
+    text-align: center;
+    padding-top: 2%;
+    margin-top: 0px;
+  }
+  
+  footer {
+    background-color: #579c87;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 80px;
+    color: #fdcb46;
+    font-size: 30px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    .mentions {
+      padding-left: 0px;
+      &:hover {
+        animation: wiggle 500ms infinite;
+      }
+    }
+  
+    .contact {
+      &:hover {
+        animation: wiggle 500ms infinite;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+    color: #fdcb46;
+  }
+  aside {
+    box-sizing: content-box;
+    background-color: #579c87;
+    color: #fdcb46;
+    height: 30px;
+    width: 35%;
+    margin: auto;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    text-transform: uppercase;
+    display: flex;
+    .pts-animation {
+      display: flex;
+      justify-content: right;
+      padding-top: 15px;
+      padding-left: 10px;
+      &-1 {
+        background-color: #fdcb46;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        animation: points 1s backwards infinite;
+        animation-delay: 0s;
+        animation-direction: alternate;
+      }
+      &-2 {
+        background-color: #fdcb46;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        animation: points 1s backwards infinite;
+        animation-delay: 0.1s;
+        animation-direction: alternate;
+      }
+      &-3 {
+        background-color: #fdcb46;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        animation: points 1s backwards infinite;
+        animation-delay: 0.2s;
+        animation-direction: alternate;
+      }
+    }
+  }
+  .flexbox {
+    padding-left: 17%;
+    display: flex;
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  section {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    box-shadow: 3px 3px 50px #f1f1f1;
+    height: 400px;
+    width: 300px;
+    margin-left: 40px;
+    transform: scale(1);
+    transition: transform 400ms;
+  
+    &:hover {
+      transform: scale(1.15);
+    }
+    h3 {
+      text-align: center;
+    }
+    h2 {
+      text-align: center;
+    }
+  }
+  .bloc1 {
+    background-color: #fcdfdb;
+    font-family: "Arial Narrow";
+    .fas {
+      padding-top: 30%;
+      font-size: 40px;
+      margin-top: 50px;
+      padding-left: 42%;
+      color: #8d6464;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    &:hover {
+      background-color: darken(#fcdfdb, 5);
+    }
+  }
+  .bloc2 {
+    background-color: #fff5fe;
+    &:hover {
+      background-color: darken(#fff5fe, 5);
+    }
+    a {
+      background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  
+    h3 {
+      padding-top: 50%;
+      background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  
+  .bloc3 {
+    background-color: #f9f9f9;
+  
+    &:hover {
+      background-color: darken(#f9f9f9, 5);
+    }
+  
+    a {
+      background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h3 {
+      padding-top: 50%;
+      background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .bloc4 {
+    background-color: #fdfffd;
+    &:hover {
+      background-color: darken(#fdfffd, 5);
+    }
+    a {
+      background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h3 {
+      padding-top: 50%;
+      background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .contact {
+    a {
+      color: #fdcb46;
+      text-decoration: none;
+    }
+  }
+  body {
+    padding-bottom: 100px;
+    margin: 0px;
+  }
+  .fas {
+    background: -webkit-linear-gradient(30deg, #f05561, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }

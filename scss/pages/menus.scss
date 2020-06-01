@@ -1,0 +1,213 @@
+$menu1-color: #c67412;
+$menu2-color:#a56799;
+$menu3-color: #6e4ccc;
+
+.carte-chic-a-la-francaise {
+    background-color: white;
+    margin-left: 30%;
+    width: 650px;
+    height: 700px;
+    h4 {
+      text-align: center;
+    }
+    &:hover {
+      transform: scale(1);
+    }
+  }
+  
+  
+  .fas {
+    background: -webkit-linear-gradient(30deg, #f05561, #f6916a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .entree {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    &:hover {
+      @include decoration(black, 12rem);
+    }
+  }
+  
+  .titre-entrée {
+    color: $menu1-color;
+  }
+  
+  .entree2 {
+    padding-left: 20px;
+    color: $menu1-color;
+    padding-bottom: 10px;
+    &:hover {
+      @include decoration($menu1-color, 8.3rem);
+    }
+  }
+  
+  .plat {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    &:hover {
+      @include decoration(black, 10.7rem);
+    }
+  }
+  
+  .titre-plat {
+    color: $menu2-color;
+  }
+  
+  .plat2 {
+    padding-left: 20px;
+    color: $menu2-color;
+    padding-bottom: 10px;
+    &:hover {
+      @include decoration($menu2-color, 9.8rem);
+    }
+  }
+  
+  .titre-dessert {
+    color: $menu3-color;
+  }
+  
+  .dessert2 {
+    padding-left: 20px;
+    color: $menu3-color;
+    &:hover {
+      @include decoration($menu3-color, 9rem);
+    }
+  }
+  
+  .dessert {
+    padding-left: 20px;
+    &:hover {
+      @include decoration(black, 9.9rem);
+    }
+  }
+  
+  .fin-de-carte {
+    text-align: left;
+    padding-right: 25%;
+  }
+  
+  .titre-carte {
+    background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+  }
+  
+  .carte-note-enchantee {
+    background-color: #fcdfdb;
+    margin-left: 25%;
+    width: 650px;
+    height: 900px;
+    font-family: "Arial Narrow";
+    h4 {
+      text-align: center;
+    }
+    .fas {
+      padding-top: 5%;
+      font-size: 40px;
+      padding-left: 48%;
+      color: #8d6464;
+    }
+    &:hover {
+      transform: scale(1);
+    }
+  }
+  
+  .carte-le-delice-des-papilles {
+    background-color: #edefef;
+    margin-left: 30%;
+    width: 650px;
+    height: 700px;
+    &:hover {
+      transform: scale(1);
+    }
+    h4 {
+      text-align: center;
+      padding-top: 10px;
+    }
+  }
+  
+  .titre-carte2 {
+    background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    padding-top: 60px;
+  }
+  
+  .dessert3 {
+    padding-left: 20px;
+    &:hover {
+      @include decoration(#229df9, 10.1rem);
+    }
+  }
+  
+  .carte-la-palette-du-gout {
+    background-color: #fdfffd;
+    margin-left: 30%;
+    width: 650px;
+    height: 700px;
+    h4 {
+      text-align: center;
+    }
+    &:hover {
+      transform: scale(1);
+    }
+  }
+  
+  .titre-carte3 {
+    background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+  }
+  
+  .entree3 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    &:hover {
+      @include decoration(#0228dd, 9.5rem);
+    }
+  }
+  
+  .plat3 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    &:hover {
+      @include decoration(#0670f3, 10rem);
+    }
+  }
+  
+  .entree4 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    &:hover {
+      @include decoration(#45993e, 12rem);
+    }
+  }
+  .plat4 {
+    padding-left: 20px;
+    padding-bottom: 10px;
+    &:hover {
+      @include decoration(#45993e, 10rem);
+    }
+  }
+  .dessert4 {
+    padding-left: 20px;
+    &:hover {
+      @include decoration(#45993e, 9.6rem);
+    }
+  }
+  .price {
+    font-weight: bold;
+    float: right;
+    padding-right: 30px;
+    padding-left: 20px;
+  }
+  p {
+    line-height: 25px;
+    padding-left: 25px;
+    clear: both;
+    text-align: left;
+  }
