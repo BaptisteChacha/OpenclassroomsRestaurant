@@ -1,23 +1,25 @@
+$color-primary:#579c87;
+$color-text:#fdcb46;
 header {
-    background-color: #579c87;
+    background-color: $color-primary;
     height: 80px;
   }
   
   h1 {
-    color: #fdcb46;
+    color: $color-text ;
     text-align: center;
     padding-top: 2%;
     margin-top: 0px;
   }
   
   footer {
-    background-color: #579c87;
+    background-color: $color-primary;
     display: flex;
     justify-content: space-between;
     padding-left: 20px;
     padding-right: 20px;
     height: 80px;
-    color: #fdcb46;
+    color: $color-text;
     font-size: 30px;
     position: fixed;
     width: 100%;
@@ -37,12 +39,12 @@ header {
   }
   a {
     text-decoration: none;
-    color: #fdcb46;
+    color: $color-text;
   }
   aside {
     box-sizing: content-box;
-    background-color: #579c87;
-    color: #fdcb46;
+    background-color: $color-primary;
+    color: $color-text;
     height: 30px;
     width: 35%;
     margin: auto;
@@ -57,7 +59,7 @@ header {
       padding-top: 15px;
       padding-left: 10px;
       &-1 {
-        background-color: #fdcb46;
+        background-color: $color-text;
         height: 10px;
         width: 10px;
         border-radius: 50%;
@@ -66,7 +68,7 @@ header {
         animation-direction: alternate;
       }
       &-2 {
-        background-color: #fdcb46;
+        background-color: $color-text;
         height: 10px;
         width: 10px;
         border-radius: 50%;
@@ -75,7 +77,7 @@ header {
         animation-direction: alternate;
       }
       &-3 {
-        background-color: #fdcb46;
+        background-color: $color-text;
         height: 10px;
         width: 10px;
         border-radius: 50%;
@@ -188,7 +190,7 @@ header {
   }
   .contact {
     a {
-      color: #fdcb46;
+      color: $color-text;
       text-decoration: none;
     }
   }
