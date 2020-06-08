@@ -4,8 +4,13 @@
 *::after {
   box-sizing: border-box;
 }
+html, body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
 @import "mixins";
 @import "keyframes";
-@import "pages/index";
-@import "pages/menus";
-@import "pages/media-queries";
+@import "pages/_index";
+@import "pages/_menus";
+@import "pages/_media";

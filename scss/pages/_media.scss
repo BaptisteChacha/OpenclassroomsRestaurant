@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width:320px) and (max-width:768px) {
     .carte-chic-a-la-francaise {
       width: 700px;
       font-size: 20px;
@@ -21,14 +21,14 @@
   
     }
   }
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width:1024px) {
     aside {
       box-sizing: content-box;
       width: max-content;
       padding-right: 3%;
     }
   }
-  @media screen and (min-width: 1440px) and (max-width: 2560px) {
+  @media screen and (min-width:1440px) and (max-width:2560px) {
     .flexbox {
       padding-left: 22%;
       padding-top: 3%;
@@ -54,7 +54,7 @@
     padding-left: 50px;
     font-size: 25px;
   }
-  @media screen and (min-width: 2560px) {
+  @media screen and (min-width:2560px) {
     .flexbox {
       padding-left: 33%;
     }
@@ -74,7 +74,7 @@
       margin-left: 38%;
     }
   }
-  @media screen and (min-width: 1400px) and (max-width: 1920px) {
+  @media screen and (min-width:1400px) and (max-width:1920px) {
     aside {
       box-sizing: content-box;
       width: max-content;
@@ -87,5 +87,10 @@
   @media screen and (min-width:1100px) and (max-width:1400px){
     .flexbox{
       padding-left: 20%;
+    }
+  }
+  @media screen and (min-width:1024px) and (max-width:1440px){
+    .carte-la-palette-du-gout{
+      margin-left: 270px;
     }
   }
