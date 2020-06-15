@@ -46,7 +46,7 @@ header {
     background-color: $color-primary;
     color: $color-text;
     height: 30px;
-    width: 35%;
+    width: 20%;
     margin: auto;
     border-radius: 10px;
     padding-bottom: 20px;
@@ -87,8 +87,13 @@ header {
       }
     }
   }
+  .titre-aside{
+    font-size: x-large;
+    padding-left: 5%;
+    padding-top: 3%;
+  }
   .flexbox {
-    padding-left: 17%;
+    padding-left: 26%;
     display: flex;
     a {
       text-decoration: none;
