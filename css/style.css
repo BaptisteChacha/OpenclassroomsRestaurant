@@ -80,6 +80,8 @@ aside {
   padding-top: 5px;
   text-transform: uppercase;
   display: flex;
+  margin-top: 10%;
+  justify-content: center;
 }
 aside .pts-animation {
   display: flex;
@@ -124,6 +126,8 @@ aside .pts-animation-3 {
 .flexbox {
   padding-left: 20%;
   display: flex;
+  height: 35%;
+  justify-content: center;
 }
 .flexbox a {
   text-decoration: none;
@@ -144,9 +148,11 @@ section:hover {
 }
 section h3 {
   text-align: center;
+  font-size: 1rem;
 }
 section h2 {
   text-align: center;
+  font-size: 0.9rem;
 }
 
 .bloc1 {
@@ -549,6 +555,26 @@ p {
 }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
+  section {
+    width: 40%;
+    height: 39vh;
+    transform: scale(1);
+    transition: transform 400ms;
+    padding: 5% 10%;
+    margin: 5%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bloc1 .fas {
+    padding-top: 0%;
+    margin-top: 0%;
+    padding-left: 0%;
+  }
+
   p {
     padding-left: 5px;
     line-height: 25px;
@@ -589,11 +615,11 @@ p {
   }
 
   aside {
-    width: 28%;
+    width: 100%;
   }
 
   .flexbox {
-    padding-left: 15%;
+    padding-left: 5%;
   }
 
   .fin-de-carte {
