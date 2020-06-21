@@ -617,8 +617,16 @@ p {
     height: 600px;
   }
 
-  .entree2, .plat2 {
+  .entree2, .plat2, .entree3, .plat3, .entree4, .plat4, .dessert4 {
     padding-left: 0px;
+  }
+
+  .entree3 .price {
+    padding-left: 10px;
+  }
+
+  .dessert4 .price {
+    padding-left: 4px;
   }
 
   aside {
