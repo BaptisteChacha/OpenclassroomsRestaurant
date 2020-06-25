@@ -152,7 +152,6 @@ section h3 {
 }
 section h2 {
   text-align: center;
-  font-size: 0.9rem;
 }
 
 .bloc1 {
@@ -560,7 +559,7 @@ p {
     height: 30vh;
     transform: scale(1);
     transition: transform 400ms;
-    padding: 5% 10%;
+    padding: 0%;
     margin: 5%;
     text-align: center;
     align-items: center;
@@ -573,6 +572,7 @@ p {
     padding-top: 0%;
     margin-top: 0%;
     padding-left: 0%;
+    font-size: 1.5rem;
   }
 
   .entree, .plat, .dessert {
@@ -582,7 +582,7 @@ p {
   p {
     padding-left: 5px;
     line-height: 25px;
-    font-size: 0.5rem;
+    font-size: 0.65rem;
   }
 
   .price {
@@ -597,7 +597,7 @@ p {
     height: auto;
   }
   .carte-note-enchantee p {
-    font-size: 0.5rem;
+    font-size: 0.6rem;
   }
   .carte-note-enchantee .fas {
     padding-left: 0%;
@@ -605,8 +605,7 @@ p {
 
   .carte-la-palette-du-gout, .carte-chic-a-la-francaise {
     width: 95%;
-    font-size: 0.7rem;
-    margin-left: 3%;
+    margin-left: 0%;
     height: 520px;
   }
 
@@ -630,10 +629,10 @@ p {
   }
 
   aside {
-    width: 100%;
+    width: 86%;
   }
   aside .pts-animation {
-    padding-top: 3%;
+    padding-top: 4%;
   }
 
   .flexbox {
@@ -647,20 +646,28 @@ p {
   footer a {
     font-size: 2rem;
   }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    margin-top: 10%;
+  }
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
-  .carte-note-enchantee p {
-    font-size: 0.5rem;
+  .carte-chic-a-la-francaise p {
+    padding-left: 0%;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 425px) {
   .carte-note-enchantee p {
-    font-size: 0.9em;
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 425px) and (max-width: 768px) {
   .carte-note-enchantee p {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
@@ -753,10 +760,15 @@ p {
     line-height: 30px;
   }
 
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+
   .carte-note-enchantee {
     width: 80%;
     font-size: 2rem;
-    margin-left: 10%;
+    margin-left: 0%;
     padding-bottom: 67%;
     height: 1080px;
   }
@@ -767,7 +779,7 @@ p {
   .carte-chic-a-la-francaise, .carte-la-palette-du-gout, .carte-le-delice-des-papilles {
     width: 80%;
     font-size: 2rem;
-    margin-left: 10%;
+    margin-left: 0%;
     padding-bottom: 67%;
     height: 960px;
   }
@@ -786,6 +798,10 @@ p {
 
   section h3 {
     font-size: 2rem;
+  }
+
+  .fas {
+    font-size: 2.5rem;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
