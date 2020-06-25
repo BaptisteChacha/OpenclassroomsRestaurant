@@ -755,6 +755,11 @@ p {
     width: 28%;
   }
 }
+@media screen and (min-width: 1025px) and (max-width: 1439px) {
+  .flexbox {
+    padding-left: 0%;
+  }
+}
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   p {
     line-height: 30px;
