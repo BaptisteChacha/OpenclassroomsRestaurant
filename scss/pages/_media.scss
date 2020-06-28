@@ -1,4 +1,5 @@
 @media screen and (min-width:320px) and (max-width:767px) {
+  $taille:2rem;
   section{
     width: 40%;
     height: 30vh;
@@ -30,7 +31,7 @@
   }
   .price{
     padding-right: 0px;
-    padding-left: 20px;
+    padding-left: 47px;
   }
   .carte-note-enchantee{
     width: 95%;
@@ -43,29 +44,78 @@
     .fas{
       padding-left: 0%;
     }
+    :hover {
+      @include decoration(black, 5.2rem);
+    }
   }
+
   .carte-la-palette-du-gout, .carte-chic-a-la-francaise{
     width: 95%;
     margin-left: 0%;
     height: 520px;
+    p{
+      font-size: 0.5rem;
+    }
   }
   .carte-le-delice-des-papilles,{
     width: 95%;
     font-size: 0.7rem;
     margin-left: 3%;
-    height: 600px;
+    height: 630px;
+  }
+  .titre-carte2{
+    padding-top: 0;
   }
   .entree2, .plat2, .entree3, .plat3, .entree4, .plat4, .dessert4{
     padding-left: 0px;
+  }
+    .entree2{
+    &:hover {
+      @include decoration($menu1-color, 2.1em);
+    }
+  }
+  .plat2{
+    &:hover {
+      @include decoration($menu2-color, 3.5em);
+    }
+  }
+  .dessert2{
+    &:hover {
+      @include decoration($menu3-color, 2.2em);
+    }
   }
   .entree3{
     .price{
       padding-left: 10px;
     }
+    &:hover {
+      @include decoration(#0228dd, 6em);
+    }
   }
+  .plat3{
+    &:hover {
+      @include decoration(#0670f3, 6.4em);
+    }
+  }
+  .dessert3{
+    &:hover {
+      @include decoration(#229df9, 5.7em);
+    }
+  }
+.entree4{
+  &:hover {
+    @include decoration(#45993e, 5.6em);
+  }
+}
+.plat4{
+  &:hover {
+    @include decoration(#45993e, 3.7em);
+  }
+}
   .dessert4{
-    .price{
-      padding-left: 4px;
+   
+    &:hover {
+      @include decoration(#45993e, 3.4em);
     }
   }
   aside{
@@ -90,6 +140,9 @@
   }
   h3{
     margin-top: 10%;
+  }
+  h1{
+    padding-top: 6%;;
   }
   }
 @media screen and (min-width:320px) and(max-width:375px){

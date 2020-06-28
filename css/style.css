@@ -278,6 +278,37 @@ body {
   margin-left: 1rem;
 }
 
+.plat {
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+.plat:hover h4 {
+  text-align: center;
+}
+.plat:hover h4::before, .plat:hover h4::after {
+  border: 2px solid black;
+  content: "";
+  width: 10.7rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.dessert {
+  padding-left: 20px;
+}
+.dessert:hover h4 {
+  text-align: center;
+}
+.dessert:hover h4::before, .dessert:hover h4::after {
+  border: 2px solid black;
+  content: "";
+  width: 9.9rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
 .titre-entrée {
   color: #c67412;
 }
@@ -299,26 +330,6 @@ body {
   margin-left: 1rem;
 }
 
-.plat {
-  padding-left: 20px;
-  padding-bottom: 10px;
-}
-.plat:hover h4 {
-  text-align: center;
-}
-.plat:hover h4::before, .plat:hover h4::after {
-  border: 2px solid black;
-  content: "";
-  width: 10.7rem;
-  display: inline-block;
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-
-.titre-plat {
-  color: #a56799;
-}
-
 .plat2 {
   padding-left: 20px;
   color: #a56799;
@@ -334,10 +345,6 @@ body {
   display: inline-block;
   margin-right: 1rem;
   margin-left: 1rem;
-}
-
-.titre-dessert {
-  color: #6e4ccc;
 }
 
 .dessert2 {
@@ -356,19 +363,12 @@ body {
   margin-left: 1rem;
 }
 
-.dessert {
-  padding-left: 20px;
+.titre-plat {
+  color: #a56799;
 }
-.dessert:hover h4 {
-  text-align: center;
-}
-.dessert:hover h4::before, .dessert:hover h4::after {
-  border: 2px solid black;
-  content: "";
-  width: 9.9rem;
-  display: inline-block;
-  margin-right: 1rem;
-  margin-left: 1rem;
+
+.titre-dessert {
+  color: #6e4ccc;
 }
 
 .fin-de-carte {
@@ -425,21 +425,6 @@ body {
   padding-top: 60px;
 }
 
-.dessert3 {
-  padding-left: 20px;
-}
-.dessert3:hover h4 {
-  text-align: center;
-}
-.dessert3:hover h4::before, .dessert3:hover h4::after {
-  border: 2px solid #229df9;
-  content: "";
-  width: 10.1rem;
-  display: inline-block;
-  margin-right: 1rem;
-  margin-left: 1rem;
-}
-
 .carte-la-palette-du-gout {
   background-color: #fdfffd;
   margin-left: 30%;
@@ -487,6 +472,21 @@ body {
   border: 2px solid #0670f3;
   content: "";
   width: 10rem;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.dessert3 {
+  padding-left: 20px;
+}
+.dessert3:hover h4 {
+  text-align: center;
+}
+.dessert3:hover h4::before, .dessert3:hover h4::after {
+  border: 2px solid #229df9;
+  content: "";
+  width: 10.1rem;
   display: inline-block;
   margin-right: 1rem;
   margin-left: 1rem;
@@ -587,7 +587,7 @@ p {
 
   .price {
     padding-right: 0px;
-    padding-left: 20px;
+    padding-left: 47px;
   }
 
   .carte-note-enchantee {
@@ -602,30 +602,151 @@ p {
   .carte-note-enchantee .fas {
     padding-left: 0%;
   }
+  .carte-note-enchantee :hover h4 {
+    text-align: center;
+  }
+  .carte-note-enchantee :hover h4::before, .carte-note-enchantee :hover h4::after {
+    border: 2px solid black;
+    content: "";
+    width: 5.2rem;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 
   .carte-la-palette-du-gout, .carte-chic-a-la-francaise {
     width: 95%;
     margin-left: 0%;
     height: 520px;
   }
+  .carte-la-palette-du-gout p, .carte-chic-a-la-francaise p {
+    font-size: 0.5rem;
+  }
 
   .carte-le-delice-des-papilles {
     width: 95%;
     font-size: 0.7rem;
     margin-left: 3%;
-    height: 600px;
+    height: 630px;
+  }
+
+  .titre-carte2 {
+    padding-top: 0;
   }
 
   .entree2, .plat2, .entree3, .plat3, .entree4, .plat4, .dessert4 {
     padding-left: 0px;
   }
 
+  .entree2:hover h4 {
+    text-align: center;
+  }
+  .entree2:hover h4::before, .entree2:hover h4::after {
+    border: 2px solid #c67412;
+    content: "";
+    width: 2.1em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .plat2:hover h4 {
+    text-align: center;
+  }
+  .plat2:hover h4::before, .plat2:hover h4::after {
+    border: 2px solid #a56799;
+    content: "";
+    width: 3.5em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .dessert2:hover h4 {
+    text-align: center;
+  }
+  .dessert2:hover h4::before, .dessert2:hover h4::after {
+    border: 2px solid #6e4ccc;
+    content: "";
+    width: 2.2em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
   .entree3 .price {
     padding-left: 10px;
   }
+  .entree3:hover h4 {
+    text-align: center;
+  }
+  .entree3:hover h4::before, .entree3:hover h4::after {
+    border: 2px solid #0228dd;
+    content: "";
+    width: 6em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
 
-  .dessert4 .price {
-    padding-left: 4px;
+  .plat3:hover h4 {
+    text-align: center;
+  }
+  .plat3:hover h4::before, .plat3:hover h4::after {
+    border: 2px solid #0670f3;
+    content: "";
+    width: 6.4em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .dessert3:hover h4 {
+    text-align: center;
+  }
+  .dessert3:hover h4::before, .dessert3:hover h4::after {
+    border: 2px solid #229df9;
+    content: "";
+    width: 5.7em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .entree4:hover h4 {
+    text-align: center;
+  }
+  .entree4:hover h4::before, .entree4:hover h4::after {
+    border: 2px solid #45993e;
+    content: "";
+    width: 5.6em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .plat4:hover h4 {
+    text-align: center;
+  }
+  .plat4:hover h4::before, .plat4:hover h4::after {
+    border: 2px solid #45993e;
+    content: "";
+    width: 3.7em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .dessert4:hover h4 {
+    text-align: center;
+  }
+  .dessert4:hover h4::before, .dessert4:hover h4::after {
+    border: 2px solid #45993e;
+    content: "";
+    width: 3.4em;
+    display: inline-block;
+    margin-right: 1rem;
+    margin-left: 1rem;
   }
 
   aside {
@@ -653,6 +774,10 @@ p {
 
   h3 {
     margin-top: 10%;
+  }
+
+  h1 {
+    padding-top: 6%;
   }
 }
 @media screen and (min-width: 320px) and (max-width: 375px) {
