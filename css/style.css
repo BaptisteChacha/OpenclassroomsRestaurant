@@ -587,7 +587,7 @@ p {
 
   .price {
     padding-right: 0px;
-    padding-left: 47px;
+    padding-left: 29px;
   }
 
   .carte-note-enchantee {
@@ -617,7 +617,7 @@ p {
   .carte-la-palette-du-gout, .carte-chic-a-la-francaise {
     width: 95%;
     margin-left: 0%;
-    height: 520px;
+    height: 590px;
   }
   .carte-la-palette-du-gout p, .carte-chic-a-la-francaise p {
     font-size: 0.5rem;
