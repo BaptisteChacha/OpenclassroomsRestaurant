@@ -21,6 +21,11 @@
       font-size: 1.5rem;
     }
   }
+  .bloc2{
+    h3{
+      padding-top: 30%;
+    }
+  }
   .entree, .plat, .dessert{
     padding-left: 0%;
   }
@@ -51,10 +56,10 @@
 
   .carte-la-palette-du-gout, .carte-chic-a-la-francaise{
     width: 95%;
-    margin-left: 0%;
+    margin-left: 2.5%;
     height: 590px;
     p{
-      font-size: 0.5rem;
+      font-size: 0.55em;
     }
   }
   .carte-le-delice-des-papilles,{
@@ -68,6 +73,7 @@
   }
   .entree2, .plat2, .entree3, .plat3, .entree4, .plat4, .dessert4{
     padding-left: 0px;
+    width: 100%;
   }
     .entree2{
     &:hover {
@@ -113,7 +119,6 @@
   }
 }
   .dessert4{
-   
     &:hover {
       @include decoration(#45993e, 3.4em);
     }
@@ -167,6 +172,9 @@
 }
 }
   @media screen and (min-width:768px) and (max-width:1024px){
+    h1{
+      padding-top: 3%;
+    }
     p{
       padding-left: 25px;
       line-height: 25px;
@@ -211,6 +219,11 @@
       font-size: 2rem;
     }
   }
+  .bloc2{
+    h3{
+      padding-top: 60%;
+    }
+  }
 }
 
   @media screen and (min-width:1024px) and (max-width:1440px){
@@ -247,6 +260,14 @@
     }
   }
   @media screen and (min-width:1440px) and (max-width:1920px){
+    .bloc2{
+      h3{
+        padding-top: 60%;
+      }
+    }
+    h1{
+      padding-top: 1%;
+    }
     p{
       line-height: 30px;
     }
@@ -294,8 +315,8 @@
       line-height: 25px;
     }
     .carte-chic-a-la-francaise, .carte-la-palette-du-gout, .carte-le-delice-des-papilles, .carte-note-enchantee{
-      width: 100%;
+      width: 90%;
       font-size: 1.5rem;
-      margin-left: 0%;
+      margin-left: 5%;
     }
   }
