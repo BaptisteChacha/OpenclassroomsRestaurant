@@ -1,12 +1,12 @@
 @keyframes wiggle {
     25% {
       // entièrement à droite
-      transform: translateX(5%);
+      transform: translateX(5%) rotate(7deg);
     }
   
     75% {
       // entièrement à gauche
-      transform: translateX(5% * -1);
+      transform: translateX(5% * -1) rotate(7deg * -1);
     }
   }
   @keyframes points {

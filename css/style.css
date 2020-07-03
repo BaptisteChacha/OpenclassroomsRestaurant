@@ -13,10 +13,10 @@ html, body {
 
 @keyframes wiggle {
   25% {
-    transform: translateX(5%);
+    transform: translateX(5%) rotate(7deg);
   }
   75% {
-    transform: translateX(-5%);
+    transform: translateX(-5%) rotate(-7deg);
   }
 }
 @keyframes points {
@@ -57,10 +57,10 @@ footer .mentions {
   padding-left: 0px;
 }
 footer .mentions:hover {
-  animation: wiggle 500ms infinite;
+  animation: wiggle 300ms infinite;
 }
 footer .contact:hover {
-  animation: wiggle 500ms infinite;
+  animation: wiggle 300ms infinite;
 }
 
 a {
@@ -78,7 +78,6 @@ aside {
   border-radius: 10px;
   padding-bottom: 20px;
   padding-top: 5px;
-  text-transform: uppercase;
   display: flex;
   margin-top: 10%;
   justify-content: center;
@@ -128,6 +127,8 @@ aside .pts-animation-3 {
   display: flex;
   height: 35%;
   justify-content: center;
+  width: 80%;
+  flex-wrap: wrap;
 }
 .flexbox a {
   text-decoration: none;
@@ -140,17 +141,12 @@ section {
   height: 400px;
   width: 300px;
   margin-left: 40px;
-  transform: scale(1);
-  transition: transform 400ms;
 }
-section:hover {
-  transform: scale(1.15);
-}
-section h3 {
+section h2 {
   text-align: center;
   font-size: 1rem;
 }
-section h2 {
+section h3 {
   text-align: center;
 }
 
@@ -165,26 +161,28 @@ section h2 {
   padding-left: 42%;
   color: #8d6464;
 }
+.bloc1:hover h2, .bloc1:hover h3 {
+  transition: transform 500ms;
+  transform: scale(2);
+}
 .bloc1 a {
   text-decoration: none;
   color: black;
-}
-.bloc1:hover {
-  background-color: #facac3;
 }
 
 .bloc2 {
   background-color: #fff5fe;
 }
-.bloc2:hover {
-  background-color: #ffdcfb;
+.bloc2:hover h2, .bloc2:hover h3 {
+  transition: transform 500ms;
+  transform: scale(2);
 }
 .bloc2 a {
   background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bloc2 h3 {
+.bloc2 h2 {
   padding-top: 50%;
   background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
   -webkit-background-clip: text;
@@ -194,15 +192,16 @@ section h2 {
 .bloc3 {
   background-color: #f9f9f9;
 }
-.bloc3:hover {
-  background-color: #ececec;
+.bloc3:hover h2, .bloc3:hover h3 {
+  transition: transform 500ms;
+  transform: scale(2);
 }
 .bloc3 a {
   background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bloc3 h3 {
+.bloc3 h2 {
   padding-top: 50%;
   background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
   -webkit-background-clip: text;
@@ -212,15 +211,16 @@ section h2 {
 .bloc4 {
   background-color: #fdfffd;
 }
-.bloc4:hover {
-  background-color: #e4ffe4;
+.bloc4:hover h2, .bloc4:hover h3 {
+  transition: transform 500ms;
+  transform: scale(2);
 }
 .bloc4 a {
   background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bloc4 h3 {
+.bloc4 h2 {
   padding-top: 50%;
   background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
   -webkit-background-clip: text;
@@ -243,6 +243,10 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
+@font-face {
+  font-family: "Farsan-Regular";
+  src: url("Farsan-Regular.ttf");
+}
 .carte-chic-a-la-francaise {
   background-color: white;
   margin-left: 30%;
@@ -250,10 +254,11 @@ body {
   height: 700px;
 }
 .carte-chic-a-la-francaise h4 {
+  font-family: Farsan-Regular;
   text-align: center;
 }
-.carte-chic-a-la-francaise:hover {
-  transform: scale(1);
+.carte-chic-a-la-francaise h4:hover {
+  text-decoration: underline;
 }
 
 .fas {
@@ -555,8 +560,8 @@ p {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   section {
-    width: 40%;
-    height: 30vh;
+    width: 60%;
+    height: 40vh;
     transform: scale(1);
     transition: transform 400ms;
     padding: 0%;
@@ -574,9 +579,31 @@ p {
     padding-left: 0%;
     font-size: 1.5rem;
   }
+  .bloc1:hover h2, .bloc1:hover h3 {
+    transition: transform 500ms;
+    transform: scale(1.25);
+  }
 
   .bloc2 h3 {
     padding-top: 30%;
+  }
+  .bloc2:hover h2, .bloc2:hover h3 {
+    transition: transform 500ms;
+    transform: scale(1.25);
+  }
+
+  .bloc3:hover h2, .bloc3:hover h3 {
+    transition: transform 500ms;
+    transform: scale(1.25);
+  }
+
+  .bloc4:hover h2, .bloc4:hover h3 {
+    transition: transform 500ms;
+    transform: scale(1.25);
+  }
+
+  h4 {
+    font-size: 1.3rem;
   }
 
   .entree, .plat, .dessert {
@@ -584,24 +611,22 @@ p {
   }
 
   p {
-    padding-left: 5px;
-    line-height: 25px;
-    font-size: 0.65rem;
+    padding-left: 0;
+    line-height: 18px;
+    font-size: 1rem;
+    text-align: center;
   }
 
   .price {
-    padding-right: 0px;
-    padding-left: 29px;
+    text-align: center;
+    float: none;
+    display: block;
   }
 
   .carte-note-enchantee {
     width: 95%;
-    font-size: 0.7rem;
     margin-left: 3%;
     height: auto;
-  }
-  .carte-note-enchantee p {
-    font-size: 0.6rem;
   }
   .carte-note-enchantee .fas {
     padding-left: 0%;
@@ -621,17 +646,17 @@ p {
   .carte-la-palette-du-gout, .carte-chic-a-la-francaise {
     width: 95%;
     margin-left: 2.5%;
-    height: 590px;
+    height: 50%;
   }
   .carte-la-palette-du-gout p, .carte-chic-a-la-francaise p {
-    font-size: 0.55em;
+    font-size: 1rem;
   }
 
   .carte-le-delice-des-papilles {
     width: 95%;
     font-size: 0.7rem;
     margin-left: 3%;
-    height: 630px;
+    height: 50%;
   }
 
   .titre-carte2 {
@@ -762,15 +787,26 @@ p {
   }
 
   .flexbox {
-    padding-left: 5%;
+    display: block;
+    padding-left: 25%;
+    width: 100%;
   }
 
   .fin-de-carte {
     padding-right: 0%;
   }
 
+  footer {
+    display: block;
+  }
   footer a {
-    font-size: 2rem;
+    font-size: 1rem;
+  }
+  footer .mentions {
+    text-align: center;
+  }
+  footer .contact {
+    text-align: center;
   }
 
   h2 {
@@ -805,6 +841,10 @@ p {
     padding-top: 3%;
   }
 
+  h4 {
+    font-size: 1.8rem;
+  }
+
   p {
     padding-left: 25px;
     line-height: 25px;
@@ -818,6 +858,7 @@ p {
     width: 90%;
     font-size: 1rem;
     margin-left: 5%;
+    height: auto;
   }
   .carte-note-enchantee p {
     font-size: 1.4em;
@@ -831,14 +872,14 @@ p {
     width: 90%;
     font-size: 1rem;
     margin-left: 5%;
-    height: 580px;
+    height: 50%;
   }
 
   .carte-le-delice-des-papilles {
     width: 90%;
     font-size: 1rem;
     margin-left: 5%;
-    height: 620px;
+    height: 50%;
   }
 
   .entree2, .plat2 {
@@ -846,19 +887,20 @@ p {
   }
 
   .flexbox {
-    padding-left: 0%;
+    padding-left: 5%;
+    width: 100%;
   }
 
   aside {
     width: 40%;
   }
 
-  section h3 {
+  section .titre-carte, section .titre-carte2, section .titre-carte1, section .titre-carte3 {
     font-size: 2rem;
   }
 
   .bloc2 h3 {
-    padding-top: 60%;
+    padding-top: 10%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
@@ -879,14 +921,14 @@ p {
     width: 90%;
     font-size: 1.5rem;
     margin-left: 5%;
-    height: 630px;
+    height: 50%;
   }
 
   .carte-le-delice-des-papilles {
     width: 90%;
     font-size: 1.5rem;
     margin-left: 5%;
-    height: 720px;
+    height: 50%;
   }
 
   aside {
@@ -895,16 +937,20 @@ p {
 }
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
   .flexbox {
-    padding-left: 0%;
+    padding-left: 20%;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .bloc2 h3 {
-    padding-top: 60%;
+    padding-top: 0%;
   }
 
   h1 {
     padding-top: 1%;
+  }
+
+  h4 {
+    font-size: 2.5rem;
   }
 
   p {
@@ -917,11 +963,11 @@ p {
   }
 
   .carte-note-enchantee {
-    width: 80%;
+    width: 79%;
     font-size: 2rem;
     margin-left: 0%;
     padding-bottom: 67%;
-    height: 1080px;
+    height: 1230px;
   }
   .carte-note-enchantee p {
     font-size: 2.3rem;
@@ -931,8 +977,7 @@ p {
     width: 80%;
     font-size: 2rem;
     margin-left: 0%;
-    padding-bottom: 67%;
-    height: 960px;
+    height: 50%;
   }
 
   .entree2, .plat2 {
@@ -940,15 +985,15 @@ p {
   }
 
   .flexbox {
-    padding-left: 0%;
+    padding-left: 27%;
   }
 
   aside {
     width: 20%;
   }
 
-  section h3 {
-    font-size: 2rem;
+  section .titre-carte, section .titre-carte2, section .titre-carte1, section .titre-carte3 {
+    font-size: 4rem;
   }
 
   .fas {
@@ -964,6 +1009,11 @@ p {
     width: 90%;
     font-size: 1.5rem;
     margin-left: 5%;
+  }
+}
+@media screen and (min-width1700px) and (max-width1920px) {
+  .flexbox {
+    width: 79%;
   }
 }
 
