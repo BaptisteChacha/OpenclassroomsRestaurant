@@ -150,9 +150,13 @@ section h3 {
   text-align: center;
 }
 
+.index-content {
+  padding-top: 50%;
+}
+
 .bloc1 {
   background-color: #fcdfdb;
-  font-family: "Arial Narrow";
+  font-family: "Dancing Script";
 }
 .bloc1 .fas {
   padding-top: 30%;
@@ -164,26 +168,28 @@ section h3 {
 .bloc1:hover h2, .bloc1:hover h3 {
   transition: transform 500ms;
   transform: scale(2);
+  opacity: 0.5;
 }
-.bloc1 a {
+.bloc1 a, .bloc1 h2, .bloc1 h3 {
   text-decoration: none;
   color: black;
 }
 
 .bloc2 {
   background-color: #fff5fe;
+  font-family: "Farsan";
 }
 .bloc2:hover h2, .bloc2:hover h3 {
   transition: transform 500ms;
   transform: scale(2);
+  opacity: 0.5;
 }
 .bloc2 a {
   background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bloc2 h2 {
-  padding-top: 50%;
+.bloc2 h2, .bloc2 h3 {
   background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -191,18 +197,19 @@ section h3 {
 
 .bloc3 {
   background-color: #f9f9f9;
+  font-family: "Oswald";
 }
 .bloc3:hover h2, .bloc3:hover h3 {
   transition: transform 500ms;
   transform: scale(2);
+  opacity: 0.5;
 }
 .bloc3 a {
   background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bloc3 h2 {
-  padding-top: 50%;
+.bloc3 h2, .bloc3 h3 {
   background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -210,18 +217,19 @@ section h3 {
 
 .bloc4 {
   background-color: #fdfffd;
+  font-family: "Playfair Display";
 }
 .bloc4:hover h2, .bloc4:hover h3 {
   transition: transform 500ms;
   transform: scale(2);
+  opacity: 0.5;
 }
 .bloc4 a {
   background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.bloc4 h2 {
-  padding-top: 50%;
+.bloc4 h2, .bloc4 h3 {
   background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -244,21 +252,18 @@ body {
 }
 
 @font-face {
-  font-family: "Farsan-Regular";
-  src: url("Farsan-Regular.ttf");
+  font-family: "DancingScript";
+  src: url("DancingScript.otf");
 }
 .carte-chic-a-la-francaise {
   background-color: white;
   margin-left: 30%;
   width: 650px;
   height: 700px;
+  font-family: "Farsan";
 }
 .carte-chic-a-la-francaise h4 {
-  font-family: Farsan-Regular;
   text-align: center;
-}
-.carte-chic-a-la-francaise h4:hover {
-  text-decoration: underline;
 }
 
 .fas {
@@ -271,10 +276,10 @@ body {
   padding-left: 20px;
   padding-bottom: 10px;
 }
-.entree:hover h4 {
+.entree h4 {
   text-align: center;
 }
-.entree:hover h4::before, .entree:hover h4::after {
+.entree h4::before, .entree h4::after {
   border: 2px solid black;
   content: "";
   width: 12rem;
@@ -287,10 +292,10 @@ body {
   padding-left: 20px;
   padding-bottom: 10px;
 }
-.plat:hover h4 {
+.plat h4 {
   text-align: center;
 }
-.plat:hover h4::before, .plat:hover h4::after {
+.plat h4::before, .plat h4::after {
   border: 2px solid black;
   content: "";
   width: 10.7rem;
@@ -302,10 +307,10 @@ body {
 .dessert {
   padding-left: 20px;
 }
-.dessert:hover h4 {
+.dessert h4 {
   text-align: center;
 }
-.dessert:hover h4::before, .dessert:hover h4::after {
+.dessert h4::before, .dessert h4::after {
   border: 2px solid black;
   content: "";
   width: 9.9rem;
@@ -323,10 +328,10 @@ body {
   color: #c67412;
   padding-bottom: 10px;
 }
-.entree2:hover h4 {
+.entree2 h4 {
   text-align: center;
 }
-.entree2:hover h4::before, .entree2:hover h4::after {
+.entree2 h4::before, .entree2 h4::after {
   border: 2px solid #c67412;
   content: "";
   width: 8.3rem;
@@ -334,16 +339,34 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+.entree2 .underline-title {
+  position: relative;
+}
+.entree2 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.entree2 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #c67412;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
 .plat2 {
   padding-left: 20px;
   color: #a56799;
   padding-bottom: 10px;
 }
-.plat2:hover h4 {
+.plat2 h4 {
   text-align: center;
 }
-.plat2:hover h4::before, .plat2:hover h4::after {
+.plat2 h4::before, .plat2 h4::after {
   border: 2px solid #a56799;
   content: "";
   width: 9.8rem;
@@ -351,21 +374,57 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+.plat2 .underline-title {
+  position: relative;
+}
+.plat2 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.plat2 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #a56799;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
 .dessert2 {
   padding-left: 20px;
   color: #6e4ccc;
 }
-.dessert2:hover h4 {
+.dessert2 h4 {
   text-align: center;
 }
-.dessert2:hover h4::before, .dessert2:hover h4::after {
+.dessert2 h4::before, .dessert2 h4::after {
   border: 2px solid #6e4ccc;
   content: "";
   width: 9rem;
   display: inline-block;
   margin-right: 1rem;
   margin-left: 1rem;
+}
+.dessert2 .underline-title {
+  position: relative;
+}
+.dessert2 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.dessert2 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #6e4ccc;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .titre-plat {
@@ -393,7 +452,7 @@ body {
   margin-left: 25%;
   width: 650px;
   height: 900px;
-  font-family: "Arial Narrow";
+  font-family: "Dancing Script";
 }
 .carte-note-enchantee h4 {
   text-align: center;
@@ -413,6 +472,7 @@ body {
   margin-left: 30%;
   width: 650px;
   height: 700px;
+  font-family: "Oswald";
 }
 .carte-le-delice-des-papilles:hover {
   transform: scale(1);
@@ -435,12 +495,10 @@ body {
   margin-left: 30%;
   width: 650px;
   height: 700px;
+  font-family: "Playfair Display";
 }
 .carte-la-palette-du-gout h4 {
   text-align: center;
-}
-.carte-la-palette-du-gout:hover {
-  transform: scale(1);
 }
 
 .titre-carte3 {
@@ -454,10 +512,10 @@ body {
   padding-left: 20px;
   padding-bottom: 10px;
 }
-.entree3:hover h4 {
+.entree3 h4 {
   text-align: center;
 }
-.entree3:hover h4::before, .entree3:hover h4::after {
+.entree3 h4::before, .entree3 h4::after {
   border: 2px solid #0228dd;
   content: "";
   width: 9.5rem;
@@ -465,15 +523,33 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+.entree3 .underline-title {
+  position: relative;
+}
+.entree3 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.entree3 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0228dd;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
 .plat3 {
   padding-left: 20px;
   padding-bottom: 10px;
 }
-.plat3:hover h4 {
+.plat3 h4 {
   text-align: center;
 }
-.plat3:hover h4::before, .plat3:hover h4::after {
+.plat3 h4::before, .plat3 h4::after {
   border: 2px solid #0670f3;
   content: "";
   width: 10rem;
@@ -481,14 +557,32 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+.plat3 .underline-title {
+  position: relative;
+}
+.plat3 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.plat3 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #0670f3;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
 .dessert3 {
   padding-left: 20px;
 }
-.dessert3:hover h4 {
+.dessert3 h4 {
   text-align: center;
 }
-.dessert3:hover h4::before, .dessert3:hover h4::after {
+.dessert3 h4::before, .dessert3 h4::after {
   border: 2px solid #229df9;
   content: "";
   width: 10.1rem;
@@ -496,15 +590,33 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+.dessert3 .underline-title {
+  position: relative;
+}
+.dessert3 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.dessert3 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #229df9;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
 .entree4 {
   padding-left: 20px;
   padding-bottom: 10px;
 }
-.entree4:hover h4 {
+.entree4 h4 {
   text-align: center;
 }
-.entree4:hover h4::before, .entree4:hover h4::after {
+.entree4 h4::before, .entree4 h4::after {
   border: 2px solid #45993e;
   content: "";
   width: 12rem;
@@ -512,15 +624,33 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+.entree4 .underline-title {
+  position: relative;
+}
+.entree4 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.entree4 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #45993e;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
 .plat4 {
   padding-left: 20px;
   padding-bottom: 10px;
 }
-.plat4:hover h4 {
+.plat4 h4 {
   text-align: center;
 }
-.plat4:hover h4::before, .plat4:hover h4::after {
+.plat4 h4::before, .plat4 h4::after {
   border: 2px solid #45993e;
   content: "";
   width: 10rem;
@@ -528,20 +658,56 @@ body {
   margin-right: 1rem;
   margin-left: 1rem;
 }
+.plat4 .underline-title {
+  position: relative;
+}
+.plat4 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.plat4 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #45993e;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
 
 .dessert4 {
   padding-left: 20px;
 }
-.dessert4:hover h4 {
+.dessert4 h4 {
   text-align: center;
 }
-.dessert4:hover h4::before, .dessert4:hover h4::after {
+.dessert4 h4::before, .dessert4 h4::after {
   border: 2px solid #45993e;
   content: "";
   width: 9.6rem;
   display: inline-block;
   margin-right: 1rem;
   margin-left: 1rem;
+}
+.dessert4 .underline-title {
+  position: relative;
+}
+.dessert4 .underline-title:hover::before {
+  visibility: visible;
+  width: 100%;
+}
+.dessert4 .underline-title:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #45993e;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
 }
 
 .price {

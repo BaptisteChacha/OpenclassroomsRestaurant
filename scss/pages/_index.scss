@@ -120,10 +120,12 @@ section {
     text-align: center;
   }
 }
- 
+.index-content{
+  padding-top: 50%;
+}
 .bloc1 {
   background-color: #fcdfdb;
-  font-family: "Arial Narrow";
+  font-family: "Dancing Script";
   .fas {
     padding-top: 30%;
     font-size: 40px;
@@ -135,19 +137,22 @@ section {
     h2,h3 {
       transition: transform 500ms;
       transform: scale(2);
+      opacity: 0.5;
     }
   }
-  a {
+  a, h2, h3 {
     text-decoration: none;
     color: black;
   }
 }
 .bloc2 {
   background-color: #fff5fe;
+  font-family: "Farsan";
   &:hover {
     h2,h3 {
       transition: transform 500ms;
       transform: scale(2);
+      opacity: 0.5;
     }
   }
   a {
@@ -155,8 +160,8 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  h2 {
-    padding-top: 50%;
+  h2,h3 {
+   
     background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -164,10 +169,12 @@ section {
 }
 .bloc3 {
   background-color: #f9f9f9;
+  font-family: "Oswald";
   &:hover {
     h2,h3 {
       transition: transform 500ms;
       transform: scale(2);
+      opacity: 0.5;
     }
   }
   a {
@@ -175,8 +182,7 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  h2 {
-    padding-top: 50%;
+  h2, h3 {
     background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,10 +190,12 @@ section {
 }
 .bloc4 {
   background-color: #fdfffd;
+  font-family: "Playfair Display";
   &:hover {
     h2,h3 {
       transition: transform 500ms;
       transform: scale(2);
+      opacity: 0.5;
     }
   }
   a {
@@ -195,8 +203,7 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  h2 {
-    padding-top: 50%;
+  h2, h3 {
     background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

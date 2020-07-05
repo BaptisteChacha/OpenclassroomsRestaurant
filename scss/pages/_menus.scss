@@ -1,206 +1,207 @@
 $menu1-color: #c67412;
-$menu2-color:#a56799;
+$menu2-color: #a56799;
 $menu3-color: #6e4ccc;
+
 @font-face {
-  font-family: 'Farsan-Regular';
-  src: url('Farsan-Regular.ttf');
+  font-family: "DancingScript";
+  src: url("DancingScript.otf");
+}
+.carte-chic-a-la-francaise {
+  background-color: white;
+  margin-left: 30%;
+  width: 650px;
+  height: 700px;
+  font-family: "Farsan";
+  h4 {
+    text-align: center;
+  }
+}
+.fas {
+  background: -webkit-linear-gradient(30deg, #f05561, #f6916a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.entree {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(black, 12rem);
+}
+.underline-title {
+}
+.plat {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(black, 10.7rem);
+}
+.dessert {
+  padding-left: 20px;
+  @include decoration(black, 9.9rem);
 }
 
-.carte-chic-a-la-francaise {
-    background-color: white;
-    margin-left: 30%;
-    width: 650px;
-    height: 700px;
-    h4 {
-      font-family: Farsan-Regular;
-      text-align: center;
-      &:hover{
-        text-decoration: underline;
-      }
-    }
+.titre-entrée {
+  color: $menu1-color;
+}
+
+.entree2 {
+  padding-left: 20px;
+  color: $menu1-color;
+  padding-bottom: 10px;
+  @include decoration($menu1-color, 8.3rem);
+  .underline-title {
+    @include soulignement(#c67412);
+  }
+}
+.plat2 {
+  padding-left: 20px;
+  color: $menu2-color;
+  padding-bottom: 10px;
+  @include decoration($menu2-color, 9.8rem);
+  .underline-title {
+    @include soulignement(#a56799);
+  }
+}
+.dessert2 {
+  padding-left: 20px;
+  color: $menu3-color;
+  @include decoration($menu3-color, 9rem);
+  .underline-title {
+    @include soulignement(#6e4ccc);
+  }
+}
+.titre-plat {
+  color: $menu2-color;
+}
+.titre-dessert {
+  color: $menu3-color;
+}
+.fin-de-carte {
+  text-align: left;
+  padding-right: 25%;
+}
+
+.titre-carte {
+  background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.carte-note-enchantee {
+  background-color: #fcdfdb;
+  margin-left: 25%;
+  width: 650px;
+  height: 900px;
+  font-family: "Dancing Script";
+  h4 {
+    text-align: center;
   }
   .fas {
-    background: -webkit-linear-gradient(30deg, #f05561, #f6916a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  .entree {
-    padding-left: 20px;
-    padding-bottom: 10px;
-    &:hover {
-      @include decoration(black, 12rem);
-    }
-  }
-  .plat {
-    padding-left: 20px;
-    padding-bottom: 10px;
-    &:hover {
-      @include decoration(black, 10.7rem);
-    }
-  }
-  .dessert {
-    padding-left: 20px;
-    &:hover {
-      @include decoration(black, 9.9rem);
-    }
-  }
-  
-  .titre-entrée {
-    color: $menu1-color;
-  }
-  
-  .entree2 {
-    padding-left: 20px;
-    color: $menu1-color;
-    padding-bottom: 10px;
-    &:hover {
-      @include decoration($menu1-color, 8.3rem);
-    }
-  } 
-  .plat2 {
-    padding-left: 20px;
-    color: $menu2-color;
-    padding-bottom: 10px;
-    &:hover {
-      @include decoration($menu2-color, 9.8rem);
-    }
-  }
-  .dessert2 {
-    padding-left: 20px;
-    color: $menu3-color;
-    &:hover {
-      @include decoration($menu3-color, 9rem);
-    }
-  }  
-  .titre-plat {
-    color: $menu2-color;
-  }  
-  .titre-dessert {
-    color: $menu3-color;
-  } 
-  .fin-de-carte {
-    text-align: left;
-    padding-right: 25%;
-  }
-  
-  .titre-carte {
-    background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    padding-top: 5%;
     font-size: 40px;
+    padding-left: 48%;
+    color: #8d6464;
   }
-  
-  .carte-note-enchantee {
-    background-color: #fcdfdb;
-    margin-left: 25%;
-    width: 650px;
-    height: 900px;
-    font-family: "Arial Narrow";
-    h4 {
-      text-align: center;
-    }
-    .fas {
-      padding-top: 5%;
-      font-size: 40px;
-      padding-left: 48%;
-      color: #8d6464;
-    }
-    &:hover {
-      transform: scale(1);
-    }
+  &:hover {
+    transform: scale(1);
   }
-  
-  .carte-le-delice-des-papilles {
-    background-color: #edefef;
-    margin-left: 30%;
-    width: 650px;
-    height: 700px;
-    &:hover {
-      transform: scale(1);
-    }
-    h4 {
-      text-align: center;
-      padding-top: 10px;
-    }
+}
+
+.carte-le-delice-des-papilles {
+  background-color: #edefef;
+  margin-left: 30%;
+  width: 650px;
+  height: 700px;
+  font-family: "Oswald";
+  &:hover {
+    transform: scale(1);
   }
-  
-  .titre-carte2 {
-    background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
-    padding-top: 60px;
+  h4 {
+    text-align: center;
+    padding-top: 10px;
   }
-  
-  .carte-la-palette-du-gout {
-    background-color: #fdfffd;
-    margin-left: 30%;
-    width: 650px;
-    height: 700px;
-    h4 {
-      text-align: center;
-    }
-    &:hover {
-      transform: scale(1);
-    }
+}
+
+.titre-carte2 {
+  background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+  padding-top: 60px;
+}
+
+.carte-la-palette-du-gout {
+  background-color: #fdfffd;
+  margin-left: 30%;
+  width: 650px;
+  height: 700px;
+  font-family: "Playfair Display";
+  h4 {
+    text-align: center;
   }
-  
-  .titre-carte3 {
-    background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 40px;
+}
+
+.titre-carte3 {
+  background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px;
+}
+
+.entree3 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(#0228dd, 9.5rem);
+  .underline-title {
+    @include soulignement(#0228dd);
   }
-  
-  .entree3 {
-    padding-left: 20px;
-    padding-bottom: 10px;
-    &:hover {
-      @include decoration(#0228dd, 9.5rem);
-    }
+}
+.plat3 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(#0670f3, 10rem);
+  .underline-title {
+    @include soulignement(#0670f3);
   }
-  .plat3 {
-    padding-left: 20px;
-    padding-bottom: 10px;
-    &:hover {
-      @include decoration(#0670f3, 10rem);
-    }
+}
+.dessert3 {
+  padding-left: 20px;
+  @include decoration(#229df9, 10.1rem);
+  .underline-title {
+    @include soulignement(#229df9);
   }
-  .dessert3 {
-    padding-left: 20px;
-    &:hover {
-      @include decoration(#229df9, 10.1rem);
-    }
+}
+.entree4 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(#45993e, 12rem);
+  .underline-title {
+    @include soulignement(#45993e);
   }
-  .entree4 {
-    padding-left: 20px;
-    padding-bottom: 10px;
-    &:hover {
-      @include decoration(#45993e, 12rem);
-    }
+}
+.plat4 {
+  padding-left: 20px;
+  padding-bottom: 10px;
+  @include decoration(#45993e, 10rem);
+  .underline-title {
+    @include soulignement(#45993e);
   }
-  .plat4 {
-    padding-left: 20px;
-    padding-bottom: 10px;
-    &:hover {
-      @include decoration(#45993e, 10rem);
-    }
+}
+.dessert4 {
+  padding-left: 20px;
+  @include decoration(#45993e, 9.6rem);
+  .underline-title {
+    @include soulignement(#45993e);
   }
-  .dessert4 {
-    padding-left: 20px;
-    &:hover {
-      @include decoration(#45993e, 9.6rem);
-    }
-  }
-  .price {
-    font-weight: bold;
-    float: right;
-    padding-right: 30px;
-    padding-left: 20px;
-  }
-  p {
-    line-height: 25px;
-    padding-left: 25px;
-    clear: both;
-    text-align: left;
-  }
+}
+.price {
+  font-weight: bold;
+  float: right;
+  padding-right: 30px;
+  padding-left: 20px;
+}
+p {
+  line-height: 25px;
+  padding-left: 25px;
+  clear: both;
+  text-align: left;
+}
