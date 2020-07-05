@@ -694,9 +694,6 @@ footer p {
     transform: scale(1.25);
   }
 
-  .bloc2 h3 {
-    padding-top: 30%;
-  }
   .bloc2:hover h2,
 .bloc2:hover h3 {
     transition: transform 500ms;
@@ -713,6 +710,10 @@ footer p {
 .bloc4:hover h3 {
     transition: transform 500ms;
     transform: scale(1.25);
+  }
+
+  .index-content {
+    padding-top: 15%;
   }
 
   h4 {
@@ -910,10 +911,6 @@ section .titre-carte3 {
     font-size: 2rem;
   }
 
-  .bloc2 h3 {
-    padding-top: 10%;
-  }
-
   footer {
     height: auto;
     font-size: 2rem;
@@ -1034,6 +1031,7 @@ section .titre-carte3 {
   footer p {
     line-height: 0;
     font-size: 2rem;
+    padding-top: 1.5%;
   }
 }
 @media screen and (min-width: 1025px) and (max-width: 1439px) {

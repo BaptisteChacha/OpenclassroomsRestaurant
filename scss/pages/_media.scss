@@ -32,9 +32,6 @@
     }
   }
   .bloc2 {
-    h3 {
-      padding-top: 30%;
-    }
     &:hover {
       h2,
       h3 {
@@ -60,6 +57,9 @@
         transform: scale(1.25);
       }
     }
+  }
+  .index-content {
+    padding-top: 15%;
   }
   h4 {
     font-size: 1.3rem;
@@ -240,11 +240,6 @@
       font-size: 2rem;
     }
   }
-  .bloc2 {
-    h3 {
-      padding-top: 10%;
-    }
-  }
   footer {
     height: auto;
     font-size: 2rem;
@@ -356,6 +351,7 @@
     p {
       line-height: 0;
       font-size: 2rem;
+      padding-top: 1.5%;
     }
   }
 }
