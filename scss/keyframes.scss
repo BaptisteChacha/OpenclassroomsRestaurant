@@ -1,19 +1,19 @@
 @keyframes wiggle {
-    25% {
-      // entièrement à droite
-      transform: translateX(5%) rotate(7deg);
-    }
-  
-    75% {
-      // entièrement à gauche
-      transform: translateX(5% * -1) rotate(7deg * -1);
-    }
+  25% {
+    // entièrement à droite
+    transform: translateX(5%) rotate(7deg);
   }
-  @keyframes points {
-    0% {
-      transform: translateY(10px);
-    }
-    100% {
-      transform: translateY(-4px);
-    }
+
+  75% {
+    // entièrement à gauche
+    transform: translateX(5% * -1) rotate(7deg * -1);
   }
+}
+@keyframes points {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-4px);
+  }
+}

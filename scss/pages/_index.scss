@@ -2,14 +2,14 @@ $color-primary: #579c87;
 $color-text: #fdcb46;
 header {
   background-color: $color-primary;
-  height: 80px;
+  height: auto;
   width: -webkit-fill-available;
 }
 
 h1 {
   color: $color-text;
   text-align: center;
-  padding-top: 2%;
+
   margin-top: 0px;
 }
 
@@ -19,12 +19,13 @@ footer {
   justify-content: space-between;
   padding-left: 20px;
   padding-right: 20px;
-  height: 80px;
+  height: auto;
   color: $color-text;
   font-size: 30px;
   position: fixed;
   width: 100%;
   bottom: 0;
+
   .mentions {
     padding-left: 0px;
     &:hover {
@@ -120,7 +121,7 @@ section {
     text-align: center;
   }
 }
-.index-content{
+.index-content {
   padding-top: 50%;
 }
 .bloc1 {
@@ -134,13 +135,16 @@ section {
     color: #8d6464;
   }
   &:hover {
-    h2,h3 {
+    h2,
+    h3 {
       transition: transform 500ms;
       transform: scale(2);
       opacity: 0.5;
     }
   }
-  a, h2, h3 {
+  a,
+  h2,
+  h3 {
     text-decoration: none;
     color: black;
   }
@@ -149,7 +153,8 @@ section {
   background-color: #fff5fe;
   font-family: "Farsan";
   &:hover {
-    h2,h3 {
+    h2,
+    h3 {
       transition: transform 500ms;
       transform: scale(2);
       opacity: 0.5;
@@ -160,8 +165,8 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  h2,h3 {
-   
+  h2,
+  h3 {
     background: -webkit-linear-gradient(45deg, #d8712e, #905bfd);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -171,7 +176,8 @@ section {
   background-color: #f9f9f9;
   font-family: "Oswald";
   &:hover {
-    h2,h3 {
+    h2,
+    h3 {
       transition: transform 500ms;
       transform: scale(2);
       opacity: 0.5;
@@ -182,7 +188,8 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  h2, h3 {
+  h2,
+  h3 {
     background: -webkit-linear-gradient(360deg, #2140df, #2b91f8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -192,7 +199,8 @@ section {
   background-color: #fdfffd;
   font-family: "Playfair Display";
   &:hover {
-    h2,h3 {
+    h2,
+    h3 {
       transition: transform 500ms;
       transform: scale(2);
       opacity: 0.5;
@@ -203,7 +211,8 @@ section {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  h2, h3 {
+  h2,
+  h3 {
     background: -webkit-linear-gradient(40deg, #42973c, #bfff7e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

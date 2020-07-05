@@ -6,6 +6,9 @@ $menu3-color: #6e4ccc;
   font-family: "DancingScript";
   src: url("DancingScript.otf");
 }
+img {
+  width: 30%;
+}
 .carte-chic-a-la-francaise {
   background-color: white;
   margin-left: 30%;
@@ -24,18 +27,22 @@ $menu3-color: #6e4ccc;
 .entree {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(black, 12rem);
-}
-.underline-title {
+  .underline-title {
+    @include soulignement(black);
+  }
 }
 .plat {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(black, 10.7rem);
+  .underline-title {
+    @include soulignement(black);
+  }
 }
 .dessert {
   padding-left: 20px;
-  @include decoration(black, 9.9rem);
+  .underline-title {
+    @include soulignement(black);
+  }
 }
 
 .titre-entrée {
@@ -46,7 +53,6 @@ $menu3-color: #6e4ccc;
   padding-left: 20px;
   color: $menu1-color;
   padding-bottom: 10px;
-  @include decoration($menu1-color, 8.3rem);
   .underline-title {
     @include soulignement(#c67412);
   }
@@ -55,7 +61,6 @@ $menu3-color: #6e4ccc;
   padding-left: 20px;
   color: $menu2-color;
   padding-bottom: 10px;
-  @include decoration($menu2-color, 9.8rem);
   .underline-title {
     @include soulignement(#a56799);
   }
@@ -63,7 +68,6 @@ $menu3-color: #6e4ccc;
 .dessert2 {
   padding-left: 20px;
   color: $menu3-color;
-  @include decoration($menu3-color, 9rem);
   .underline-title {
     @include soulignement(#6e4ccc);
   }
@@ -85,7 +89,6 @@ $menu3-color: #6e4ccc;
   -webkit-text-fill-color: transparent;
   font-size: 40px;
 }
-
 .carte-note-enchantee {
   background-color: #fcdfdb;
   margin-left: 25%;
@@ -100,9 +103,6 @@ $menu3-color: #6e4ccc;
     font-size: 40px;
     padding-left: 48%;
     color: #8d6464;
-  }
-  &:hover {
-    transform: scale(1);
   }
 }
 
@@ -150,7 +150,6 @@ $menu3-color: #6e4ccc;
 .entree3 {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(#0228dd, 9.5rem);
   .underline-title {
     @include soulignement(#0228dd);
   }
@@ -158,14 +157,12 @@ $menu3-color: #6e4ccc;
 .plat3 {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(#0670f3, 10rem);
   .underline-title {
     @include soulignement(#0670f3);
   }
 }
 .dessert3 {
   padding-left: 20px;
-  @include decoration(#229df9, 10.1rem);
   .underline-title {
     @include soulignement(#229df9);
   }
@@ -173,7 +170,6 @@ $menu3-color: #6e4ccc;
 .entree4 {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(#45993e, 12rem);
   .underline-title {
     @include soulignement(#45993e);
   }
@@ -181,14 +177,12 @@ $menu3-color: #6e4ccc;
 .plat4 {
   padding-left: 20px;
   padding-bottom: 10px;
-  @include decoration(#45993e, 10rem);
   .underline-title {
     @include soulignement(#45993e);
   }
 }
 .dessert4 {
   padding-left: 20px;
-  @include decoration(#45993e, 9.6rem);
   .underline-title {
     @include soulignement(#45993e);
   }
@@ -204,4 +198,11 @@ p {
   padding-left: 25px;
   clear: both;
   text-align: left;
+}
+footer {
+  height: 10%;
+  font-size: 16px;
+  p {
+    line-height: 1;
+  }
 }
